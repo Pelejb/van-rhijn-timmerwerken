@@ -1,15 +1,334 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Van Rhijn Timmerwerken</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Van Rhijn Timmerwerken — Vakmanschap in hout uit Katwijk</title>
+<meta name="description" content="Van Rhijn Timmerwerken uit Katwijk aan Zee: kozijnen, deuren, dakkapellen, trappen en maatwerk in hout. Vakmanschap voor uw woning, op maat gemaakt.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://pelejb.github.io/van-rhijn-timmerwerken/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:title" content="Van Rhijn Timmerwerken — Vakmanschap in hout uit Katwijk">
+<meta property="og:description" content="Kozijnen, deuren, dakkapellen, trappen en maatwerk in hout. Voor woningen in Katwijk en omgeving.">
+<meta property="og:url" content="https://pelejb.github.io/van-rhijn-timmerwerken/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+      colors: {
+        ink: '#1C1917', graphite: '#44403C', steel: '#57534E', mist: '#A8A29E',
+        bone: '#FAFAF9', cloud: '#F5F5F4', line: '#E7E5E4',
+        timber: '#B45309', ember: '#92400E',
+      },
+      letterSpacing: { tightest: '-0.05em' },
+    }
+  }
+}
+</script>
+<link rel="stylesheet" href="assets/css/styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Van Rhijn Timmerwerken",
+  "description": "Timmerbedrijf in Katwijk aan Zee. Specialist in kozijnen, deuren, dakkapellen, trappen en maatwerk in hout.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Adrianastraat 50",
+    "postalCode": "2225 NZ",
+    "addressLocality": "Katwijk aan Zee",
+    "addressRegion": "Zuid-Holland",
+    "addressCountry": "NL"
+  },
+  "url": "https://pelejb.github.io/van-rhijn-timmerwerken/",
+  "email": "marcel@vrtimmerwerken.nl",
+  "areaServed": ["Katwijk", "Rijnsburg", "Valkenburg", "Noordwijk", "Leiden", "Oegstgeest", "Wassenaar", "Voorschoten"]
+}
+</script>
 </head>
-<body class="min-h-screen flex items-center justify-center bg-stone-50 text-stone-800 font-sans">
-  <main class="text-center p-8">
-    <h1 class="text-4xl font-semibold mb-2">Van Rhijn Timmerwerken</h1>
-    <p class="text-stone-500">Website in aanbouw.</p>
-  </main>
+
+<body class="bg-bone text-graphite font-sans antialiased">
+
+<header class="fixed top-0 inset-x-0 z-50 backdrop-blur bg-bone/80 border-b border-line">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12 h-16 flex items-center justify-between">
+    <a href="index.html" class="font-black tracking-tightest text-ink text-xl">VAN&nbsp;RHIJN</a>
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+      <a href="index.html" class="text-ink hover:text-timber transition-colors">Home</a>
+      <a href="diensten.html" class="hover:text-timber transition-colors">Diensten</a>
+      <a href="over-ons.html" class="hover:text-timber transition-colors">Over ons</a>
+      <a href="contact.html" class="hover:text-timber transition-colors">Contact</a>
+    </nav>
+    <a href="contact.html" class="hidden md:inline-flex items-center gap-2 bg-ink text-bone px-5 py-2.5 text-sm font-semibold hover:bg-timber transition-colors cursor-pointer">
+      Vraag offerte
+      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+    <button id="menuBtn" aria-label="Menu" class="md:hidden p-2 cursor-pointer">
+      <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+  <div id="mobileNav" class="hidden md:hidden border-t border-line bg-bone">
+    <div class="px-6 py-4 flex flex-col gap-4 text-sm font-medium">
+      <a href="index.html">Home</a>
+      <a href="diensten.html">Diensten</a>
+      <a href="over-ons.html">Over ons</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="bg-ink text-bone px-5 py-3 text-center font-semibold">Vraag offerte</a>
+    </div>
+  </div>
+</header>
+
+<main class="pt-16">
+
+  <section class="relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 pt-20 pb-24 lg:pt-32 lg:pb-40">
+      <div class="flex items-center gap-3 mb-10">
+        <span class="h-px w-10 bg-timber"></span>
+        <span class="text-xs font-semibold tracking-[0.25em] uppercase text-graphite">Timmerbedrijf · Katwijk aan Zee</span>
+      </div>
+      <h1 class="font-black tracking-tightest leading-[0.85] text-ink" style="font-size: clamp(3rem, 10vw, 11rem);">
+        Vakmanschap.<br>
+        <span class="text-timber">In hout.</span><br>
+        Op maat.
+      </h1>
+      <div class="mt-12 max-w-2xl">
+        <p class="text-xl lg:text-2xl text-graphite leading-relaxed">
+          Van een nieuw kozijn tot een complete dakkapel of een trap op maat. Van Rhijn Timmerwerken levert strak, degelijk timmerwerk in Katwijk en omgeving — met oog voor detail.
+        </p>
+      </div>
+      <div class="mt-12 flex flex-col sm:flex-row gap-4">
+        <a href="contact.html" class="group inline-flex items-center justify-center gap-3 bg-timber text-white px-8 py-5 font-bold text-base hover:bg-ember transition-all cursor-pointer">
+          Vraag een vrijblijvende offerte
+          <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="mailto:marcel@vrtimmerwerken.nl" class="inline-flex items-center justify-center gap-3 border-2 border-ink text-ink px-8 py-5 font-bold text-base hover:bg-ink hover:text-bone transition-colors cursor-pointer">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+          Stuur een mail
+        </a>
+      </div>
+      <div class="mt-20 grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 border-t border-line pt-12">
+        <div>
+          <div class="font-black text-4xl lg:text-5xl text-ink tracking-tightest">Hout</div>
+          <div class="mt-2 text-sm text-graphite">Onze specialiteit</div>
+        </div>
+        <div>
+          <div class="font-black text-4xl lg:text-5xl text-ink tracking-tightest">9</div>
+          <div class="mt-2 text-sm text-graphite">Vakgebieden</div>
+        </div>
+        <div>
+          <div class="font-black text-4xl lg:text-5xl text-timber tracking-tightest">1op1</div>
+          <div class="mt-2 text-sm text-graphite">Eén aanspreekpunt</div>
+        </div>
+        <div>
+          <div class="font-black text-4xl lg:text-5xl text-ink tracking-tightest">Maat</div>
+          <div class="mt-2 text-sm text-graphite">Werk volgens uw wens</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-ink text-bone py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="flex items-center gap-3 mb-8">
+        <span class="h-px w-10 bg-timber"></span>
+        <span class="text-xs font-semibold tracking-[0.25em] uppercase text-mist">Wat we doen</span>
+      </div>
+      <h2 class="font-black tracking-tightest leading-[0.9]" style="font-size: clamp(2.25rem, 6vw, 5.5rem);">
+        Hout in alle vormen.<br>
+        <span class="text-timber">Met vakmanschap gemaakt.</span>
+      </h2>
+      <p class="mt-8 max-w-2xl text-lg text-mist leading-relaxed">
+        Van klein detail tot ingrijpend project. Hieronder de belangrijkste werkzaamheden waarin Van Rhijn Timmerwerken thuis is.
+      </p>
+
+      <div class="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-line/20">
+        <article class="bg-ink p-8 lg:p-10 hover:bg-graphite transition-colors group cursor-pointer">
+          <div class="w-12 h-12 flex items-center justify-center border border-mist/40 mb-6 group-hover:bg-timber group-hover:border-timber transition-colors">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16"/><path d="M4 12h16M12 4v16"/></svg>
+          </div>
+          <h3 class="font-black text-2xl tracking-tight mb-3">Kozijnen & ramen</h3>
+          <p class="text-mist leading-relaxed">Houten kozijnen op maat, vervanging of restauratie. Strak afgemonteerd en goed afgekit.</p>
+        </article>
+
+        <article class="bg-ink p-8 lg:p-10 hover:bg-graphite transition-colors group cursor-pointer">
+          <div class="w-12 h-12 flex items-center justify-center border border-mist/40 mb-6 group-hover:bg-timber group-hover:border-timber transition-colors">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="3" width="12" height="18"/><circle cx="15" cy="12" r="0.5" fill="currentColor"/></svg>
+          </div>
+          <h3 class="font-black text-2xl tracking-tight mb-3">Deuren</h3>
+          <p class="text-mist leading-relaxed">Binnen- en buitendeuren plaatsen, afhangen en afstellen. Inclusief sloten en hang- en sluitwerk.</p>
+        </article>
+
+        <article class="bg-ink p-8 lg:p-10 hover:bg-graphite transition-colors group cursor-pointer">
+          <div class="w-12 h-12 flex items-center justify-center border border-mist/40 mb-6 group-hover:bg-timber group-hover:border-timber transition-colors">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21l9-13 9 13M9 21v-6h6v6"/></svg>
+          </div>
+          <h3 class="font-black text-2xl tracking-tight mb-3">Dakkapellen</h3>
+          <p class="text-mist leading-relaxed">Meer ruimte en licht op zolder. Plaatsing van een nieuwe dakkapel of vervanging van een bestaande.</p>
+        </article>
+
+        <article class="bg-ink p-8 lg:p-10 hover:bg-graphite transition-colors group cursor-pointer">
+          <div class="w-12 h-12 flex items-center justify-center border border-mist/40 mb-6 group-hover:bg-timber group-hover:border-timber transition-colors">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 20h4v-4h4v-4h4V8h4V4"/></svg>
+          </div>
+          <h3 class="font-black text-2xl tracking-tight mb-3">Trappen</h3>
+          <p class="text-mist leading-relaxed">Open of dichte trap, recht of met bordes. Nieuw geplaatst of bekleed met traprenovatie.</p>
+        </article>
+
+        <article class="bg-ink p-8 lg:p-10 hover:bg-graphite transition-colors group cursor-pointer">
+          <div class="w-12 h-12 flex items-center justify-center border border-mist/40 mb-6 group-hover:bg-timber group-hover:border-timber transition-colors">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg>
+          </div>
+          <h3 class="font-black text-2xl tracking-tight mb-3">Inbouwkasten & maatwerk</h3>
+          <p class="text-mist leading-relaxed">Kasten, schappen en meubels op maat. Geheel passend bij de ruimte en het gebruik.</p>
+        </article>
+
+        <article class="bg-ink p-8 lg:p-10 hover:bg-graphite transition-colors group cursor-pointer">
+          <div class="w-12 h-12 flex items-center justify-center border border-mist/40 mb-6 group-hover:bg-timber group-hover:border-timber transition-colors">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-6 9 6M3 9v12h18V9M9 21V13h6v8"/></svg>
+          </div>
+          <h3 class="font-black text-2xl tracking-tight mb-3">Schuren & overkappingen</h3>
+          <p class="text-mist leading-relaxed">Tuinhuisjes, schuren, overkappingen en veranda's. Stevig gebouwd voor jaren plezier.</p>
+        </article>
+      </div>
+
+      <div class="mt-12">
+        <a href="diensten.html" class="inline-flex items-center gap-3 text-timber font-bold hover:gap-5 transition-all cursor-pointer">
+          Bekijk alle diensten
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-20">
+        <div class="lg:col-span-5">
+          <div class="flex items-center gap-3 mb-8">
+            <span class="h-px w-10 bg-timber"></span>
+            <span class="text-xs font-semibold tracking-[0.25em] uppercase text-graphite">Waarom Van Rhijn</span>
+          </div>
+          <h2 class="font-black tracking-tightest leading-[0.9] text-ink" style="font-size: clamp(2rem, 5vw, 4.5rem);">
+            Eerlijk werk.<br>Met oog voor detail.
+          </h2>
+        </div>
+        <div class="lg:col-span-7 grid sm:grid-cols-2 gap-px bg-line">
+          <div class="bg-bone p-8">
+            <div class="font-black text-timber text-5xl tracking-tightest mb-4">01</div>
+            <h3 class="font-bold text-lg text-ink mb-2">Echt vakmanschap</h3>
+            <p class="text-graphite text-sm leading-relaxed">Strak werk, nette afwerking en degelijk hout. We zien het zelf ook elke dag — dus we doen het in één keer goed.</p>
+          </div>
+          <div class="bg-bone p-8">
+            <div class="font-black text-timber text-5xl tracking-tightest mb-4">02</div>
+            <h3 class="font-bold text-lg text-ink mb-2">Vaste prijs vooraf</h3>
+            <p class="text-graphite text-sm leading-relaxed">Heldere offerte, geen verrassingen achteraf. U weet precies wat u kunt verwachten.</p>
+          </div>
+          <div class="bg-bone p-8">
+            <div class="font-black text-timber text-5xl tracking-tightest mb-4">03</div>
+            <h3 class="font-bold text-lg text-ink mb-2">Eén aanspreekpunt</h3>
+            <p class="text-graphite text-sm leading-relaxed">U heeft direct contact met Marcel zelf — van eerste afspraak tot oplevering.</p>
+          </div>
+          <div class="bg-bone p-8">
+            <div class="font-black text-timber text-5xl tracking-tightest mb-4">04</div>
+            <h3 class="font-bold text-lg text-ink mb-2">Schoon achterlaten</h3>
+            <p class="text-graphite text-sm leading-relaxed">Iedere werkdag eindigt met een opgeruimde werkplek. Uw woning blijft uw woning.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 lg:py-32 bg-cloud">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="flex items-center gap-3 mb-8">
+            <span class="h-px w-10 bg-timber"></span>
+            <span class="text-xs font-semibold tracking-[0.25em] uppercase text-graphite">Werkgebied</span>
+          </div>
+          <h2 class="font-black tracking-tightest leading-[0.9] text-ink" style="font-size: clamp(2rem, 5vw, 4rem);">
+            Katwijk en de<br>hele regio.
+          </h2>
+          <p class="mt-6 text-lg text-graphite leading-relaxed max-w-lg">
+            Van Rhijn Timmerwerken werkt in Katwijk, Rijnsburg, Valkenburg, Noordwijk, Leiden en omstreken. Twijfelt u over uw plaats? Stuur even een bericht.
+          </p>
+        </div>
+        <ul class="grid grid-cols-2 gap-px bg-line">
+          <li class="bg-cloud p-6 font-semibold text-ink">Katwijk aan Zee</li>
+          <li class="bg-cloud p-6 font-semibold text-ink">Katwijk aan den Rijn</li>
+          <li class="bg-cloud p-6 font-semibold text-ink">Rijnsburg</li>
+          <li class="bg-cloud p-6 font-semibold text-ink">Valkenburg</li>
+          <li class="bg-cloud p-6 font-semibold text-ink">Noordwijk</li>
+          <li class="bg-cloud p-6 font-semibold text-ink">Leiden</li>
+          <li class="bg-cloud p-6 font-semibold text-ink">Oegstgeest</li>
+          <li class="bg-cloud p-6 font-semibold text-ink">Wassenaar</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-timber text-white py-24 lg:py-32">
+    <div class="max-w-5xl mx-auto px-6 lg:px-12 text-center">
+      <h2 class="font-black tracking-tightest leading-[0.9]" style="font-size: clamp(2.5rem, 8vw, 7rem);">
+        Klaar voor de<br>volgende stap?
+      </h2>
+      <p class="mt-8 text-xl lg:text-2xl text-white/90 max-w-2xl mx-auto">
+        Stuur uw plannen — een paar foto's of schetsen helpen al — en u krijgt een eerlijke offerte op maat.
+      </p>
+      <div class="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="contact.html" class="inline-flex items-center justify-center gap-3 bg-ink text-bone px-10 py-5 font-bold text-base hover:bg-bone hover:text-ink transition-colors cursor-pointer">
+          Vraag offerte aan
+        </a>
+        <a href="mailto:marcel@vrtimmerwerken.nl" class="inline-flex items-center justify-center gap-3 border-2 border-white text-white px-10 py-5 font-bold text-base hover:bg-white hover:text-timber transition-colors cursor-pointer">
+          Stuur direct een mail
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="bg-ink text-mist py-16">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="grid md:grid-cols-4 gap-12">
+      <div class="md:col-span-2">
+        <div class="font-black text-bone text-2xl tracking-tightest mb-4">VAN&nbsp;RHIJN&nbsp;TIMMERWERKEN</div>
+        <p class="max-w-sm leading-relaxed">Timmerbedrijf in Katwijk aan Zee. Vakmanschap in kozijnen, deuren, dakkapellen, trappen en maatwerk.</p>
+      </div>
+      <div>
+        <h4 class="text-bone font-bold mb-4">Contact</h4>
+        <ul class="space-y-2">
+          <li><a href="mailto:marcel@vrtimmerwerken.nl" class="hover:text-timber transition-colors">marcel@vrtimmerwerken.nl</a></li>
+          <li>Adrianastraat 50</li>
+          <li>2225 NZ Katwijk aan Zee</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-bone font-bold mb-4">Pagina's</h4>
+        <ul class="space-y-2">
+          <li><a href="index.html" class="hover:text-timber transition-colors">Home</a></li>
+          <li><a href="diensten.html" class="hover:text-timber transition-colors">Diensten</a></li>
+          <li><a href="over-ons.html" class="hover:text-timber transition-colors">Over ons</a></li>
+          <li><a href="contact.html" class="hover:text-timber transition-colors">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-12 pt-8 border-t border-graphite/50 text-sm flex flex-col md:flex-row justify-between gap-4">
+      <span>© 2026 Van Rhijn Timmerwerken. Alle rechten voorbehouden.</span>
+      <span>Katwijk aan Zee · Zuid-Holland</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>

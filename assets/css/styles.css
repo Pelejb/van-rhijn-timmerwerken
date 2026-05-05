@@ -1,0 +1,31 @@
+html { scroll-behavior: smooth; }
+body { -webkit-font-smoothing: antialiased; }
+
+::selection { background: #B45309; color: #FAFAF9; }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-text-fill-color: #FAFAF9;
+  -webkit-box-shadow: 0 0 0px 1000px #1C1917 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #B45309;
+  outline-offset: 3px;
+}
