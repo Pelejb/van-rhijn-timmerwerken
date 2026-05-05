@@ -1,15 +1,25 @@
 html { scroll-behavior: smooth; }
 body { -webkit-font-smoothing: antialiased; }
 
-::selection { background: #9C4221; color: #F4EFE6; }
+::selection { background: #FACC15; color: #0A0A0A; }
 
 @keyframes marquee {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
 }
 .animate-marquee {
-  animation: marquee 60s linear infinite;
+  animation: marquee 50s linear infinite;
   width: max-content;
+}
+
+.stripes-mark {
+  background-image: repeating-linear-gradient(
+    45deg,
+    #FACC15 0,
+    #FACC15 14px,
+    #0A0A0A 14px,
+    #0A0A0A 28px
+  );
 }
 
 input:-webkit-autofill,
@@ -17,8 +27,8 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 textarea:-webkit-autofill,
 select:-webkit-autofill {
-  -webkit-text-fill-color: #1F1B16;
-  -webkit-box-shadow: 0 0 0px 1000px #EDE5D6 inset;
+  -webkit-text-fill-color: #E8E3D7;
+  -webkit-box-shadow: 0 0 0px 1000px #0A0A0A inset;
   transition: background-color 5000s ease-in-out 0s;
 }
 
@@ -36,6 +46,6 @@ button:focus-visible,
 input:focus-visible,
 select:focus-visible,
 textarea:focus-visible {
-  outline: 2px solid #9C4221;
+  outline: 3px solid #FACC15;
   outline-offset: 3px;
 }

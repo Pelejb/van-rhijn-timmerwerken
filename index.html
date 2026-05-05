@@ -3,20 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Van Rhijn Timmerwerken — Hout op maat uit Katwijk</title>
-<meta name="description" content="Van Rhijn Timmerwerken uit Katwijk aan Zee: kozijnen, deuren, dakkapellen, trappen en maatwerk in hout. Vakmanschap voor uw woning, op maat gemaakt.">
+<title>Van Rhijn Timmerwerken — Timmerwerk uit Katwijk</title>
+<meta name="description" content="Van Rhijn Timmerwerken uit Katwijk aan Zee: kozijnen, deuren, dakkapellen, trappen en maatwerk in hout. Strak werk, eerlijke prijs, één aanspreekpunt.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://pelejb.github.io/van-rhijn-timmerwerken/">
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="nl_NL">
-<meta property="og:title" content="Van Rhijn Timmerwerken — Hout op maat uit Katwijk">
+<meta property="og:title" content="Van Rhijn Timmerwerken — Timmerwerk uit Katwijk">
 <meta property="og:description" content="Kozijnen, deuren, dakkapellen, trappen en maatwerk in hout. Voor woningen in Katwijk en omgeving.">
 <meta property="og:url" content="https://pelejb.github.io/van-rhijn-timmerwerken/">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,400;1,9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
@@ -25,17 +25,20 @@ tailwind.config = {
     extend: {
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
-        serif: ['Fraunces', 'Georgia', 'serif'],
+        display: ['"Archivo Black"', 'Impact', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
       },
       colors: {
-        cream: '#F4EFE6',
-        paper: '#EDE5D6',
-        ink: '#1F1B16',
-        graphite: '#544A3D',
-        mist: '#9B8F7E',
-        line: '#E2D9C9',
-        clay: '#9C4221',
-        ember: '#7C2D12',
+        bone: '#E8E3D7',
+        off: '#D9D3C3',
+        ink: '#0A0A0A',
+        graphite: '#262626',
+        steel: '#525252',
+        mist: '#737373',
+        line: '#C2B89F',
+        mark: '#FACC15',
+        flash: '#FDE047',
+        rust: '#991B1B',
       },
     }
   }
@@ -65,222 +68,242 @@ tailwind.config = {
 </script>
 </head>
 
-<body class="bg-cream text-graphite font-sans antialiased">
+<body class="bg-bone text-ink font-sans antialiased">
 
-<header class="absolute top-0 inset-x-0 z-50">
-  <div class="max-w-[110rem] mx-auto px-8 lg:px-16 pt-8 lg:pt-12 flex items-center justify-between">
-    <a href="index.html" class="font-serif italic text-2xl text-ink leading-none">Van Rhijn<span class="text-clay">.</span></a>
-    <nav class="hidden md:flex items-center gap-10 text-sm tracking-wide text-ink">
-      <a href="index.html" class="hover:text-clay transition-colors">Werk</a>
-      <a href="diensten.html" class="hover:text-clay transition-colors">Diensten</a>
-      <a href="over-ons.html" class="hover:text-clay transition-colors">Over</a>
-      <a href="contact.html" class="hover:text-clay transition-colors">Contact</a>
+<header class="border-b-4 border-ink bg-bone">
+  <div class="max-w-[110rem] mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
+    <a href="index.html" class="flex items-baseline gap-2">
+      <span class="font-display text-ink text-2xl uppercase leading-none">Van Rhijn</span>
+      <span class="font-mono text-xs text-mist hidden sm:inline">/ TIMMERWERKEN</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-1 font-mono text-xs uppercase">
+      <a href="index.html" class="px-3 py-2 bg-ink text-bone">Werk</a>
+      <a href="diensten.html" class="px-3 py-2 hover:bg-ink hover:text-bone transition-colors">Diensten</a>
+      <a href="over-ons.html" class="px-3 py-2 hover:bg-ink hover:text-bone transition-colors">Over</a>
+      <a href="contact.html" class="px-3 py-2 hover:bg-ink hover:text-bone transition-colors">Contact</a>
     </nav>
-    <button id="menuBtn" aria-label="Menu" class="md:hidden p-2 cursor-pointer text-ink">
-      <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 8h16M4 16h16"/></svg>
+    <a href="tel:+31630553364" class="hidden md:inline-flex items-center gap-2 bg-mark border-2 border-ink px-4 py-2 font-mono text-sm font-bold text-ink hover:bg-flash transition-colors">
+      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+      06 30 55 33 64
+    </a>
+    <button id="menuBtn" aria-label="Menu" class="md:hidden p-2 cursor-pointer text-ink border-2 border-ink">
+      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
     </button>
   </div>
-  <div id="mobileNav" class="hidden md:hidden absolute inset-x-0 top-full bg-cream border-t border-line">
-    <div class="px-8 py-6 flex flex-col gap-4 text-base font-serif">
-      <a href="index.html" class="hover:text-clay">Werk</a>
-      <a href="diensten.html" class="hover:text-clay">Diensten</a>
-      <a href="over-ons.html" class="hover:text-clay">Over</a>
-      <a href="contact.html" class="hover:text-clay">Contact</a>
+  <div id="mobileNav" class="hidden md:hidden border-t-2 border-ink">
+    <div class="flex flex-col font-mono text-sm uppercase">
+      <a href="index.html" class="px-6 py-4 border-b border-ink/20 hover:bg-ink hover:text-bone">Werk</a>
+      <a href="diensten.html" class="px-6 py-4 border-b border-ink/20 hover:bg-ink hover:text-bone">Diensten</a>
+      <a href="over-ons.html" class="px-6 py-4 border-b border-ink/20 hover:bg-ink hover:text-bone">Over</a>
+      <a href="contact.html" class="px-6 py-4 border-b border-ink/20 hover:bg-ink hover:text-bone">Contact</a>
+      <a href="tel:+31630553364" class="px-6 py-4 bg-mark text-ink font-bold">→ Bel 06 30 55 33 64</a>
     </div>
   </div>
 </header>
 
 <main>
 
-  <section class="pt-40 lg:pt-56 pb-24 lg:pb-40 px-8 lg:px-16">
-    <div class="max-w-[110rem] mx-auto grid lg:grid-cols-12 gap-12 lg:gap-20">
-      <div class="lg:col-span-8">
-        <p class="font-serif italic text-clay text-lg mb-10 flex items-center gap-3">
-          <span class="inline-block w-8 h-px bg-clay"></span>
-          Timmerbedrijf, Katwijk aan Zee
-        </p>
-        <h1 class="font-serif font-normal text-ink leading-[0.95] tracking-tight" style="font-size: clamp(3rem, 9vw, 10rem);">
-          Hout op maat,<br>
-          <em class="text-clay font-normal">vakkundig</em><br>
-          gemaakt.
-        </h1>
+  <section class="border-b-4 border-ink relative overflow-hidden">
+    <div class="max-w-[110rem] mx-auto px-6 lg:px-10 py-16 lg:py-28 relative">
+      <div class="font-mono text-xs lg:text-sm uppercase mb-10 inline-flex items-center gap-3 bg-ink text-bone px-3 py-1.5">
+        <span class="w-2 h-2 bg-mark"></span>
+        Timmerbedrijf · Katwijk aan Zee · est. NL
       </div>
-      <div class="lg:col-span-4 lg:pt-12 flex flex-col">
-        <p class="text-lg text-graphite leading-relaxed border-l-2 border-clay pl-6">
-          Een nieuw kozijn, een dakkapel, een trap of een inbouwkast op maat. Van Rhijn Timmerwerken levert strak, degelijk timmerwerk in Katwijk en omgeving — met oog voor detail.
+      <h1 class="font-display uppercase text-ink leading-[0.85] tracking-[-0.02em]" style="font-size: clamp(3.5rem, 12vw, 13rem);">
+        Timmerwerk<br>
+        dat zit.<br>
+        <span class="relative inline-block">
+          <span class="relative z-10">Zonder gedoe.</span>
+          <span class="absolute bottom-1 left-0 right-0 h-[0.35em] bg-mark -z-0"></span>
+        </span>
+      </h1>
+      <div class="mt-12 grid lg:grid-cols-12 gap-8 lg:gap-12">
+        <p class="lg:col-span-6 text-lg lg:text-xl text-graphite leading-relaxed max-w-2xl">
+          Een nieuw kozijn, een dakkapel, een trap of een inbouwkast op maat. Strak gemonteerd, eerlijk geprijsd, één aanspreekpunt — Marcel zelf — van offerte tot oplevering.
         </p>
-        <div class="mt-12 space-y-4">
-          <a href="contact.html" class="group inline-flex items-baseline gap-3">
-            <span class="font-serif italic text-2xl text-ink border-b-2 border-clay pb-1">Vraag een offerte aan</span>
-            <span class="text-clay text-xl group-hover:translate-x-1 transition-transform">→</span>
+        <div class="lg:col-span-6 flex flex-col sm:flex-row gap-4 lg:justify-end items-start lg:items-end">
+          <a href="contact.html" class="group inline-flex items-center justify-center gap-3 bg-ink text-bone border-2 border-ink px-8 py-5 font-display uppercase text-base lg:text-lg hover:bg-mark hover:text-ink transition-colors w-full sm:w-auto">
+            Vraag offerte
+            <span class="group-hover:translate-x-1 transition-transform">→</span>
           </a>
-          <a href="tel:+31630553364" class="group inline-flex items-center gap-3 text-graphite hover:text-ink transition-colors">
-            <span class="text-sm">of bel</span>
-            <span class="font-medium border-b border-line group-hover:border-clay transition-colors">06 30 55 33 64</span>
+          <a href="tel:+31630553364" class="group inline-flex items-center justify-center gap-3 bg-mark text-ink border-2 border-ink px-8 py-5 font-display uppercase text-base lg:text-lg hover:bg-flash transition-colors w-full sm:w-auto">
+            Bel 06 30 55 33 64
           </a>
-          <a href="mailto:marcel@vrtimmerwerken.nl" class="group inline-flex items-center gap-3 text-graphite hover:text-ink transition-colors">
-            <span class="text-sm">mail</span>
-            <span class="font-medium border-b border-line group-hover:border-clay transition-colors">marcel@vrtimmerwerken.nl</span>
-          </a>
+        </div>
+      </div>
+    </div>
+    <div class="absolute bottom-0 right-0 w-32 lg:w-48 h-12 lg:h-16 stripes-mark border-l-4 border-t-4 border-ink hidden md:block" aria-hidden="true"></div>
+  </section>
+
+  <section class="bg-ink overflow-hidden border-b-4 border-ink">
+    <div class="py-5 flex items-center gap-10 whitespace-nowrap font-display uppercase text-2xl lg:text-3xl text-bone animate-marquee">
+      <span>KOZIJNEN</span><span class="text-mark">●</span>
+      <span>DEUREN</span><span class="text-mark">●</span>
+      <span>DAKKAPELLEN</span><span class="text-mark">●</span>
+      <span>TRAPPEN</span><span class="text-mark">●</span>
+      <span>INBOUWKASTEN</span><span class="text-mark">●</span>
+      <span>HOUTEN VLOEREN</span><span class="text-mark">●</span>
+      <span>GEVELS</span><span class="text-mark">●</span>
+      <span>SCHUREN</span><span class="text-mark">●</span>
+      <span>HOUTROT</span><span class="text-mark">●</span>
+      <span>MAATWERK</span><span class="text-mark">●</span>
+      <span aria-hidden="true">KOZIJNEN</span><span class="text-mark" aria-hidden="true">●</span>
+      <span aria-hidden="true">DEUREN</span><span class="text-mark" aria-hidden="true">●</span>
+      <span aria-hidden="true">DAKKAPELLEN</span><span class="text-mark" aria-hidden="true">●</span>
+      <span aria-hidden="true">TRAPPEN</span><span class="text-mark" aria-hidden="true">●</span>
+      <span aria-hidden="true">INBOUWKASTEN</span><span class="text-mark" aria-hidden="true">●</span>
+      <span aria-hidden="true">HOUTEN VLOEREN</span><span class="text-mark" aria-hidden="true">●</span>
+      <span aria-hidden="true">GEVELS</span><span class="text-mark" aria-hidden="true">●</span>
+      <span aria-hidden="true">SCHUREN</span><span class="text-mark" aria-hidden="true">●</span>
+      <span aria-hidden="true">HOUTROT</span><span class="text-mark" aria-hidden="true">●</span>
+      <span aria-hidden="true">MAATWERK</span><span class="text-mark" aria-hidden="true">●</span>
+    </div>
+  </section>
+
+  <section class="border-b-4 border-ink">
+    <div class="max-w-[110rem] mx-auto px-6 lg:px-10 py-20 lg:py-28">
+      <div class="grid lg:grid-cols-12 gap-8 mb-16">
+        <div class="lg:col-span-4">
+          <p class="font-mono text-xs uppercase text-mist mb-4">[01] — Diensten</p>
+          <h2 class="font-display uppercase text-ink leading-[0.9]" style="font-size: clamp(2.5rem, 7vw, 6rem);">
+            Wat we<br>maken.
+          </h2>
+        </div>
+        <p class="lg:col-span-7 lg:col-start-6 text-lg text-graphite leading-relaxed self-end">
+          Negen vakgebieden, allemaal hout. Hieronder de zes belangrijkste — bekijk de complete lijst voor de rest.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-0 border-2 border-ink">
+        <a href="diensten.html" class="group relative p-8 lg:p-10 bg-bone border-2 border-ink -m-px hover:bg-mark transition-colors">
+          <div class="font-mono text-xs uppercase text-mist mb-6">[01]</div>
+          <h3 class="font-display uppercase text-ink text-3xl lg:text-4xl leading-none mb-4">Kozijnen<br>&amp; Ramen</h3>
+          <p class="text-graphite leading-relaxed">Kozijnen op maat. Vervanging, restauratie of nieuwbouw — strak afgemonteerd, netjes afgekit.</p>
+          <span class="absolute bottom-6 right-6 text-2xl group-hover:translate-x-1 transition-transform">→</span>
+        </a>
+        <a href="diensten.html" class="group relative p-8 lg:p-10 bg-bone border-2 border-ink -m-px hover:bg-mark transition-colors">
+          <div class="font-mono text-xs uppercase text-mist mb-6">[02]</div>
+          <h3 class="font-display uppercase text-ink text-3xl lg:text-4xl leading-none mb-4">Deuren</h3>
+          <p class="text-graphite leading-relaxed">Binnen- en buitendeuren plaatsen, afhangen, sluitend afstellen. Inclusief sloten en beslag.</p>
+          <span class="absolute bottom-6 right-6 text-2xl group-hover:translate-x-1 transition-transform">→</span>
+        </a>
+        <a href="diensten.html" class="group relative p-8 lg:p-10 bg-bone border-2 border-ink -m-px hover:bg-mark transition-colors">
+          <div class="font-mono text-xs uppercase text-mist mb-6">[03]</div>
+          <h3 class="font-display uppercase text-ink text-3xl lg:text-4xl leading-none mb-4">Dakkapellen</h3>
+          <p class="text-graphite leading-relaxed">Plaatsing van een nieuwe dakkapel of vervanging. Meer ruimte en licht op zolder, in één dag mogelijk.</p>
+          <span class="absolute bottom-6 right-6 text-2xl group-hover:translate-x-1 transition-transform">→</span>
+        </a>
+        <a href="diensten.html" class="group relative p-8 lg:p-10 bg-bone border-2 border-ink -m-px hover:bg-mark transition-colors">
+          <div class="font-mono text-xs uppercase text-mist mb-6">[04]</div>
+          <h3 class="font-display uppercase text-ink text-3xl lg:text-4xl leading-none mb-4">Trappen</h3>
+          <p class="text-graphite leading-relaxed">Een nieuwe trap of een verzorgde traprenovatie. Open, dicht, recht of met bordes.</p>
+          <span class="absolute bottom-6 right-6 text-2xl group-hover:translate-x-1 transition-transform">→</span>
+        </a>
+        <a href="diensten.html" class="group relative p-8 lg:p-10 bg-bone border-2 border-ink -m-px hover:bg-mark transition-colors">
+          <div class="font-mono text-xs uppercase text-mist mb-6">[05]</div>
+          <h3 class="font-display uppercase text-ink text-3xl lg:text-4xl leading-none mb-4">Maatwerk</h3>
+          <p class="text-graphite leading-relaxed">Inbouwkasten, schappen, meubels en tv-wanden — precies passend bij uw ruimte.</p>
+          <span class="absolute bottom-6 right-6 text-2xl group-hover:translate-x-1 transition-transform">→</span>
+        </a>
+        <a href="diensten.html" class="group relative p-8 lg:p-10 bg-bone border-2 border-ink -m-px hover:bg-mark transition-colors">
+          <div class="font-mono text-xs uppercase text-mist mb-6">[06]</div>
+          <h3 class="font-display uppercase text-ink text-3xl lg:text-4xl leading-none mb-4">Renovatie<br>&amp; Houtrot</h3>
+          <p class="text-graphite leading-relaxed">Houtrot, scheuren of versleten delen vakkundig hersteld. Voor binnen- én buitenwerk.</p>
+          <span class="absolute bottom-6 right-6 text-2xl group-hover:translate-x-1 transition-transform">→</span>
+        </a>
+      </div>
+
+      <div class="mt-12">
+        <a href="diensten.html" class="inline-flex items-center gap-3 font-display uppercase text-lg border-b-4 border-ink pb-1 hover:text-rust transition-colors">
+          Bekijk alle 9 diensten
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-ink text-bone border-b-4 border-ink">
+    <div class="max-w-[110rem] mx-auto px-6 lg:px-10 py-20 lg:py-28">
+      <div class="grid lg:grid-cols-12 gap-8 mb-16">
+        <div class="lg:col-span-5">
+          <p class="font-mono text-xs uppercase text-mark mb-4">[02] — Werkwijze</p>
+          <h2 class="font-display uppercase text-bone leading-[0.9]" style="font-size: clamp(2.5rem, 7vw, 6rem);">
+            Eerlijk werk.<br>Geen<br><span class="text-mark">verrassingen.</span>
+          </h2>
+        </div>
+        <p class="lg:col-span-6 lg:col-start-7 text-lg text-mist leading-relaxed self-end">
+          Eén timmerman, één afspraak, één offerte. Geen verkopers, geen tussenlagen. Direct contact met de man die het werk uitvoert.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-0 border-2 border-mark">
+        <div class="p-8 lg:p-10 border-2 border-mark -m-px relative">
+          <div class="font-display text-mark text-7xl leading-none mb-6">01</div>
+          <h3 class="font-display uppercase text-bone text-xl mb-3">Kennismaking</h3>
+          <p class="text-mist leading-relaxed text-sm">U belt of mailt. Indien nodig komen we langs voor een vrijblijvende afspraak ter plaatse.</p>
+        </div>
+        <div class="p-8 lg:p-10 border-2 border-mark -m-px">
+          <div class="font-display text-mark text-7xl leading-none mb-6">02</div>
+          <h3 class="font-display uppercase text-bone text-xl mb-3">Offerte</h3>
+          <p class="text-mist leading-relaxed text-sm">Heldere offerte met vaste prijs en realistische planning. U weet vooraf precies waar u aan toe bent.</p>
+        </div>
+        <div class="p-8 lg:p-10 border-2 border-mark -m-px">
+          <div class="font-display text-mark text-7xl leading-none mb-6">03</div>
+          <h3 class="font-display uppercase text-bone text-xl mb-3">Uitvoering</h3>
+          <p class="text-mist leading-relaxed text-sm">We werken volgens planning, communiceren wat we doen en houden de werkplek opgeruimd.</p>
+        </div>
+        <div class="p-8 lg:p-10 border-2 border-mark -m-px">
+          <div class="font-display text-mark text-7xl leading-none mb-6">04</div>
+          <h3 class="font-display uppercase text-bone text-xl mb-3">Oplevering</h3>
+          <p class="text-mist leading-relaxed text-sm">Samen lopen we het werk na. Iets niet helemaal goed? Dan lossen we dat op.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="border-y border-line bg-paper overflow-hidden">
-    <div class="py-6 flex items-center gap-12 whitespace-nowrap font-serif italic text-2xl lg:text-3xl text-ink animate-marquee">
-      <span>Kozijnen</span><span class="text-clay">·</span>
-      <span>Deuren</span><span class="text-clay">·</span>
-      <span>Dakkapellen</span><span class="text-clay">·</span>
-      <span>Trappen</span><span class="text-clay">·</span>
-      <span>Inbouwkasten</span><span class="text-clay">·</span>
-      <span>Houten vloeren</span><span class="text-clay">·</span>
-      <span>Gevelbekleding</span><span class="text-clay">·</span>
-      <span>Schuren</span><span class="text-clay">·</span>
-      <span>Houtrot</span><span class="text-clay">·</span>
-      <span>Maatwerk</span><span class="text-clay">·</span>
-      <span aria-hidden="true">Kozijnen</span><span class="text-clay" aria-hidden="true">·</span>
-      <span aria-hidden="true">Deuren</span><span class="text-clay" aria-hidden="true">·</span>
-      <span aria-hidden="true">Dakkapellen</span><span class="text-clay" aria-hidden="true">·</span>
-      <span aria-hidden="true">Trappen</span><span class="text-clay" aria-hidden="true">·</span>
-      <span aria-hidden="true">Inbouwkasten</span><span class="text-clay" aria-hidden="true">·</span>
-      <span aria-hidden="true">Houten vloeren</span><span class="text-clay" aria-hidden="true">·</span>
-      <span aria-hidden="true">Gevelbekleding</span><span class="text-clay" aria-hidden="true">·</span>
-      <span aria-hidden="true">Schuren</span><span class="text-clay" aria-hidden="true">·</span>
-      <span aria-hidden="true">Houtrot</span><span class="text-clay" aria-hidden="true">·</span>
-      <span aria-hidden="true">Maatwerk</span><span class="text-clay" aria-hidden="true">·</span>
-    </div>
-  </section>
-
-  <section class="py-32 lg:py-48 px-8 lg:px-16">
-    <div class="max-w-5xl mx-auto">
-      <p class="font-serif italic text-clay text-base mb-10 flex items-center gap-3">
-        <span class="inline-block w-8 h-px bg-clay"></span>
-        Onze werkwijze
-      </p>
-      <p class="font-serif text-ink leading-[1.1] tracking-tight" style="font-size: clamp(1.75rem, 4.5vw, 4rem);">
-        <em class="text-clay font-normal">Eén timmerman</em>, één afspraak, één offerte. U heeft direct contact met de man die het werk ook uitvoert — geen verkopers, geen tussenlagen, geen verrassingen achteraf.
-      </p>
-    </div>
-  </section>
-
-  <section class="border-t border-line px-8 lg:px-16 py-24 lg:py-32">
-    <div class="max-w-[110rem] mx-auto">
-      <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 mb-20">
-        <p class="lg:col-span-4 font-serif italic text-clay text-base flex items-center gap-3">
-          <span class="inline-block w-8 h-px bg-clay"></span>
-          Diensten
-        </p>
-        <h2 class="lg:col-span-8 font-serif font-normal text-ink leading-[1] tracking-tight" style="font-size: clamp(2.5rem, 6vw, 6rem);">
-          Wat we maken.
-        </h2>
-      </div>
-
-      <ol class="border-t border-line">
-        <li class="border-b border-line group">
-          <a href="diensten.html" class="grid lg:grid-cols-12 gap-6 lg:gap-12 py-10 px-2 -mx-2 hover:bg-paper transition-colors">
-            <span class="lg:col-span-1 font-serif italic text-clay text-3xl">01</span>
-            <h3 class="lg:col-span-3 font-serif text-ink text-3xl lg:text-4xl leading-tight">Kozijnen<br><span class="italic">&amp; ramen</span></h3>
-            <p class="lg:col-span-7 text-graphite text-lg leading-relaxed self-center">Houten kozijnen op maat — vervanging, restauratie of compleet nieuw. Strak afgemonteerd, netjes afgekit.</p>
-            <span class="lg:col-span-1 self-center text-clay text-3xl group-hover:translate-x-2 transition-transform">→</span>
-          </a>
-        </li>
-        <li class="border-b border-line group">
-          <a href="diensten.html" class="grid lg:grid-cols-12 gap-6 lg:gap-12 py-10 px-2 -mx-2 hover:bg-paper transition-colors">
-            <span class="lg:col-span-1 font-serif italic text-clay text-3xl">02</span>
-            <h3 class="lg:col-span-3 font-serif text-ink text-3xl lg:text-4xl leading-tight">Deuren</h3>
-            <p class="lg:col-span-7 text-graphite text-lg leading-relaxed self-center">Binnen- en buitendeuren plaatsen, afhangen en sluitend afstellen. Inclusief sloten en beslag.</p>
-            <span class="lg:col-span-1 self-center text-clay text-3xl group-hover:translate-x-2 transition-transform">→</span>
-          </a>
-        </li>
-        <li class="border-b border-line group">
-          <a href="diensten.html" class="grid lg:grid-cols-12 gap-6 lg:gap-12 py-10 px-2 -mx-2 hover:bg-paper transition-colors">
-            <span class="lg:col-span-1 font-serif italic text-clay text-3xl">03</span>
-            <h3 class="lg:col-span-3 font-serif text-ink text-3xl lg:text-4xl leading-tight">Dakkapellen</h3>
-            <p class="lg:col-span-7 text-graphite text-lg leading-relaxed self-center">Plaatsing van een nieuwe dakkapel of vervanging van een bestaande — meer ruimte en licht op zolder.</p>
-            <span class="lg:col-span-1 self-center text-clay text-3xl group-hover:translate-x-2 transition-transform">→</span>
-          </a>
-        </li>
-        <li class="border-b border-line group">
-          <a href="diensten.html" class="grid lg:grid-cols-12 gap-6 lg:gap-12 py-10 px-2 -mx-2 hover:bg-paper transition-colors">
-            <span class="lg:col-span-1 font-serif italic text-clay text-3xl">04</span>
-            <h3 class="lg:col-span-3 font-serif text-ink text-3xl lg:text-4xl leading-tight">Trappen</h3>
-            <p class="lg:col-span-7 text-graphite text-lg leading-relaxed self-center">Een nieuwe trap of een verzorgde traprenovatie. Open, dicht, recht of met bordes.</p>
-            <span class="lg:col-span-1 self-center text-clay text-3xl group-hover:translate-x-2 transition-transform">→</span>
-          </a>
-        </li>
-        <li class="border-b border-line group">
-          <a href="diensten.html" class="grid lg:grid-cols-12 gap-6 lg:gap-12 py-10 px-2 -mx-2 hover:bg-paper transition-colors">
-            <span class="lg:col-span-1 font-serif italic text-clay text-3xl">05</span>
-            <h3 class="lg:col-span-3 font-serif text-ink text-3xl lg:text-4xl leading-tight"><span class="italic">Maatwerk</span></h3>
-            <p class="lg:col-span-7 text-graphite text-lg leading-relaxed self-center">Inbouwkasten, schappen, meubels en tv-wanden — precies passend bij uw ruimte en gebruik.</p>
-            <span class="lg:col-span-1 self-center text-clay text-3xl group-hover:translate-x-2 transition-transform">→</span>
-          </a>
-        </li>
-        <li class="border-b border-line group">
-          <a href="diensten.html" class="grid lg:grid-cols-12 gap-6 lg:gap-12 py-10 px-2 -mx-2 hover:bg-paper transition-colors">
-            <span class="lg:col-span-1 font-serif italic text-clay text-3xl">06</span>
-            <h3 class="lg:col-span-3 font-serif text-ink text-3xl lg:text-4xl leading-tight">Renovatie<br><span class="italic">&amp; herstel</span></h3>
-            <p class="lg:col-span-7 text-graphite text-lg leading-relaxed self-center">Houtrot, scheuren of versleten delen vakkundig hersteld. Voor binnen- én buitenwerk.</p>
-            <span class="lg:col-span-1 self-center text-clay text-3xl group-hover:translate-x-2 transition-transform">→</span>
-          </a>
-        </li>
-      </ol>
-
-      <div class="mt-16 text-center">
-        <a href="diensten.html" class="group inline-flex items-baseline gap-3">
-          <span class="font-serif italic text-xl text-ink border-b-2 border-clay pb-1">Bekijk alle diensten</span>
-          <span class="text-clay group-hover:translate-x-1 transition-transform">→</span>
-        </a>
+  <section class="border-b-4 border-ink">
+    <div class="max-w-[110rem] mx-auto px-6 lg:px-10 py-20 lg:py-28">
+      <div class="grid lg:grid-cols-12 gap-8 lg:gap-12">
+        <div class="lg:col-span-5">
+          <p class="font-mono text-xs uppercase text-mist mb-4">[03] — Werkgebied</p>
+          <h2 class="font-display uppercase text-ink leading-[0.9]" style="font-size: clamp(2.5rem, 6vw, 5.5rem);">
+            Katwijk<br>en de hele<br><span class="bg-mark px-2 -mx-2">regio.</span>
+          </h2>
+          <p class="mt-8 text-lg text-graphite leading-relaxed max-w-md">
+            Werkzaam in Katwijk, Rijnsburg, Valkenburg, Noordwijk, Leiden en omstreken. Twijfelt u over uw plaats? Stuur even een bericht.
+          </p>
+        </div>
+        <ul class="lg:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-0 border-2 border-ink self-center">
+          <li class="border-2 border-ink -m-px p-5 bg-bone font-display uppercase text-ink text-lg">Katwijk a/Zee</li>
+          <li class="border-2 border-ink -m-px p-5 bg-bone font-display uppercase text-ink text-lg">Katwijk a/d Rijn</li>
+          <li class="border-2 border-ink -m-px p-5 bg-mark font-display uppercase text-ink text-lg">Rijnsburg</li>
+          <li class="border-2 border-ink -m-px p-5 bg-bone font-display uppercase text-ink text-lg">Valkenburg</li>
+          <li class="border-2 border-ink -m-px p-5 bg-bone font-display uppercase text-ink text-lg">Noordwijk</li>
+          <li class="border-2 border-ink -m-px p-5 bg-bone font-display uppercase text-ink text-lg">Leiden</li>
+          <li class="border-2 border-ink -m-px p-5 bg-bone font-display uppercase text-ink text-lg">Oegstgeest</li>
+          <li class="border-2 border-ink -m-px p-5 bg-mark font-display uppercase text-ink text-lg">Wassenaar</li>
+          <li class="border-2 border-ink -m-px p-5 bg-bone font-display uppercase text-ink text-lg">Voorschoten</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <section class="border-t border-line bg-paper px-8 lg:px-16 py-24 lg:py-32">
-    <div class="max-w-[110rem] mx-auto grid lg:grid-cols-12 gap-12">
-      <div class="lg:col-span-5">
-        <p class="font-serif italic text-clay text-base mb-8 flex items-center gap-3">
-          <span class="inline-block w-8 h-px bg-clay"></span>
-          Werkgebied
-        </p>
-        <h2 class="font-serif font-normal text-ink leading-[1] tracking-tight" style="font-size: clamp(2.25rem, 5vw, 4.5rem);">
-          Katwijk en de<br><em class="text-clay font-normal">hele regio</em>.
-        </h2>
-        <p class="mt-8 text-lg text-graphite leading-relaxed max-w-md">
-          Wij werken in Katwijk, Rijnsburg, Valkenburg, Noordwijk, Leiden en omstreken. Twijfelt u over uw plaats? Stuur even een bericht.
-        </p>
-      </div>
-      <div class="lg:col-span-7 self-center">
-        <p class="font-serif text-2xl lg:text-3xl text-ink leading-relaxed">
-          Katwijk aan Zee <span class="text-clay">·</span> Katwijk aan den Rijn <span class="text-clay">·</span> Rijnsburg <span class="text-clay">·</span> Valkenburg <span class="text-clay">·</span> <em>Noordwijk</em> <span class="text-clay">·</span> Noordwijkerhout <span class="text-clay">·</span> Leiden <span class="text-clay">·</span> Oegstgeest <span class="text-clay">·</span> Wassenaar <span class="text-clay">·</span> <em>Voorschoten</em> <span class="text-clay">·</span> Sassenheim <span class="text-clay">·</span> Voorhout
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="px-8 lg:px-16 py-32 lg:py-48 border-t border-line">
-    <div class="max-w-4xl mx-auto text-center">
-      <p class="font-serif italic text-clay text-base mb-10 flex items-center gap-3 justify-center">
-        <span class="inline-block w-8 h-px bg-clay"></span>
-        Klaar voor de volgende stap?
-        <span class="inline-block w-8 h-px bg-clay"></span>
-      </p>
-      <h2 class="font-serif font-normal text-ink leading-[0.95] tracking-tight" style="font-size: clamp(2.5rem, 8vw, 7rem);">
-        Stuur uw plannen,<br>
-        <em class="text-clay font-normal">we kijken</em><br>
-        ernaar.
+  <section class="bg-mark border-b-4 border-ink">
+    <div class="max-w-[110rem] mx-auto px-6 lg:px-10 py-24 lg:py-32 relative">
+      <p class="font-mono text-xs uppercase text-ink mb-6">[04] — Klaar voor de volgende stap?</p>
+      <h2 class="font-display uppercase text-ink leading-[0.85]" style="font-size: clamp(3rem, 11vw, 11rem);">
+        Stuur uw<br>plannen.<br>Wij <span class="bg-ink text-mark px-2 -mx-1 inline-block">bouwen</span>.
       </h2>
-      <p class="mt-12 text-lg text-graphite leading-relaxed max-w-xl mx-auto">
-        Een paar foto's of schetsen helpen al. U krijgt een eerlijke offerte op maat.
+      <p class="mt-10 text-lg lg:text-xl text-ink leading-relaxed max-w-2xl">
+        Een paar foto's of schetsen helpen al. U krijgt een eerlijke offerte op maat — meestal binnen één werkdag.
       </p>
-      <div class="mt-12 flex flex-col sm:flex-row gap-6 justify-center items-center">
-        <a href="contact.html" class="group inline-flex items-baseline gap-3">
-          <span class="font-serif italic text-2xl text-ink border-b-2 border-clay pb-1">Naar het contactformulier</span>
-          <span class="text-clay text-xl group-hover:translate-x-1 transition-transform">→</span>
+      <div class="mt-12 flex flex-col sm:flex-row gap-4">
+        <a href="contact.html" class="group inline-flex items-center justify-center gap-3 bg-ink text-bone border-4 border-ink px-8 py-5 font-display uppercase text-base lg:text-lg hover:bg-bone hover:text-ink transition-colors">
+          Naar contactformulier
+          <span class="group-hover:translate-x-1 transition-transform">→</span>
         </a>
-        <span class="text-mist hidden sm:inline">of bel direct</span>
-        <a href="tel:+31630553364" class="font-medium text-graphite hover:text-clay border-b border-line hover:border-clay transition-colors pb-1">
-          06 30 55 33 64
+        <a href="tel:+31630553364" class="group inline-flex items-center justify-center gap-3 bg-bone text-ink border-4 border-ink px-8 py-5 font-display uppercase text-base lg:text-lg hover:bg-ink hover:text-bone transition-colors">
+          Bel 06 30 55 33 64
         </a>
       </div>
     </div>
@@ -288,39 +311,40 @@ tailwind.config = {
 
 </main>
 
-<footer class="border-t border-line bg-cream px-8 lg:px-16 py-16">
-  <div class="max-w-[110rem] mx-auto">
-    <div class="grid md:grid-cols-12 gap-8 lg:gap-12 items-end">
+<footer class="bg-ink text-bone">
+  <div class="max-w-[110rem] mx-auto px-6 lg:px-10 py-16">
+    <div class="grid md:grid-cols-12 gap-8">
       <div class="md:col-span-5">
-        <a href="index.html" class="font-serif italic text-3xl text-ink leading-none">Van Rhijn<span class="text-clay">.</span></a>
-        <p class="mt-6 max-w-sm text-graphite leading-relaxed">Timmerbedrijf in Katwijk aan Zee. Vakmanschap in kozijnen, deuren, dakkapellen, trappen en maatwerk.</p>
+        <div class="font-display uppercase text-bone text-3xl leading-none mb-1">Van Rhijn</div>
+        <div class="font-mono text-xs text-mark uppercase mb-6">/ Timmerwerken</div>
+        <p class="max-w-sm text-mist leading-relaxed">Timmerbedrijf in Katwijk aan Zee. Vakmanschap in kozijnen, deuren, dakkapellen, trappen en maatwerk.</p>
       </div>
       <div class="md:col-span-3">
-        <p class="text-xs uppercase tracking-[0.2em] text-clay mb-4">Contact</p>
-        <ul class="space-y-2 text-graphite">
-          <li><a href="tel:+31630553364" class="hover:text-ink transition-colors">06 30 55 33 64</a></li>
-          <li><a href="mailto:marcel@vrtimmerwerken.nl" class="hover:text-ink transition-colors">marcel@vrtimmerwerken.nl</a></li>
-          <li>Adrianastraat 50</li>
-          <li>2225 NZ Katwijk aan Zee</li>
+        <p class="font-mono text-xs uppercase text-mark mb-4">[ Contact ]</p>
+        <ul class="space-y-2 text-bone">
+          <li><a href="tel:+31630553364" class="font-display uppercase hover:text-mark transition-colors">06 30 55 33 64</a></li>
+          <li><a href="mailto:marcel@vrtimmerwerken.nl" class="hover:text-mark transition-colors break-all">marcel@vrtimmerwerken.nl</a></li>
+          <li class="text-mist pt-2">Adrianastraat 50</li>
+          <li class="text-mist">2225 NZ Katwijk aan Zee</li>
         </ul>
       </div>
       <div class="md:col-span-2">
-        <p class="text-xs uppercase tracking-[0.2em] text-clay mb-4">Pagina's</p>
-        <ul class="space-y-2 text-graphite">
-          <li><a href="index.html" class="hover:text-ink transition-colors">Werk</a></li>
-          <li><a href="diensten.html" class="hover:text-ink transition-colors">Diensten</a></li>
-          <li><a href="over-ons.html" class="hover:text-ink transition-colors">Over</a></li>
-          <li><a href="contact.html" class="hover:text-ink transition-colors">Contact</a></li>
+        <p class="font-mono text-xs uppercase text-mark mb-4">[ Pagina's ]</p>
+        <ul class="space-y-2 text-bone">
+          <li><a href="index.html" class="hover:text-mark transition-colors">Werk</a></li>
+          <li><a href="diensten.html" class="hover:text-mark transition-colors">Diensten</a></li>
+          <li><a href="over-ons.html" class="hover:text-mark transition-colors">Over</a></li>
+          <li><a href="contact.html" class="hover:text-mark transition-colors">Contact</a></li>
         </ul>
       </div>
-      <div class="md:col-span-2 md:text-right">
-        <p class="text-xs uppercase tracking-[0.2em] text-clay mb-4">Sinds</p>
-        <p class="font-serif italic text-2xl text-ink">Katwijk aan Zee</p>
+      <div class="md:col-span-2">
+        <p class="font-mono text-xs uppercase text-mark mb-4">[ Vestiging ]</p>
+        <p class="font-display uppercase text-bone text-xl leading-tight">Katwijk<br>aan Zee</p>
       </div>
     </div>
-    <div class="mt-12 pt-8 border-t border-line text-sm flex flex-col md:flex-row justify-between gap-4 text-mist">
-      <span>© 2026 Van Rhijn Timmerwerken</span>
-      <span class="font-serif italic">Alles met de hand gemaakt.</span>
+    <div class="mt-12 pt-8 border-t-2 border-mark/30 text-xs font-mono uppercase flex flex-col md:flex-row justify-between gap-4 text-mist">
+      <span>© 2026 Van Rhijn Timmerwerken — Alle rechten voorbehouden</span>
+      <span class="text-mark">/ STRAK WERK · EERLIJKE PRIJS · 1 OP 1</span>
     </div>
   </div>
 </footer>

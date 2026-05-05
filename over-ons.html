@@ -15,7 +15,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,400;1,9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
@@ -24,17 +24,14 @@ tailwind.config = {
     extend: {
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
-        serif: ['Fraunces', 'Georgia', 'serif'],
+        display: ['"Archivo Black"', 'Impact', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
       },
       colors: {
-        cream: '#F4EFE6',
-        paper: '#EDE5D6',
-        ink: '#1F1B16',
-        graphite: '#544A3D',
-        mist: '#9B8F7E',
-        line: '#E2D9C9',
-        clay: '#9C4221',
-        ember: '#7C2D12',
+        bone: '#E8E3D7', off: '#D9D3C3',
+        ink: '#0A0A0A', graphite: '#262626', steel: '#525252', mist: '#737373',
+        line: '#C2B89F',
+        mark: '#FACC15', flash: '#FDE047', rust: '#991B1B',
       },
     }
   }
@@ -43,156 +40,159 @@ tailwind.config = {
 <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body class="bg-cream text-graphite font-sans antialiased">
+<body class="bg-bone text-ink font-sans antialiased">
 
-<header class="absolute top-0 inset-x-0 z-50">
-  <div class="max-w-[110rem] mx-auto px-8 lg:px-16 pt-8 lg:pt-12 flex items-center justify-between">
-    <a href="index.html" class="font-serif italic text-2xl text-ink leading-none">Van Rhijn<span class="text-clay">.</span></a>
-    <nav class="hidden md:flex items-center gap-10 text-sm tracking-wide text-ink">
-      <a href="index.html" class="hover:text-clay transition-colors">Werk</a>
-      <a href="diensten.html" class="hover:text-clay transition-colors">Diensten</a>
-      <a href="over-ons.html" class="text-clay">Over</a>
-      <a href="contact.html" class="hover:text-clay transition-colors">Contact</a>
+<header class="border-b-4 border-ink bg-bone">
+  <div class="max-w-[110rem] mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
+    <a href="index.html" class="flex items-baseline gap-2">
+      <span class="font-display text-ink text-2xl uppercase leading-none">Van Rhijn</span>
+      <span class="font-mono text-xs text-mist hidden sm:inline">/ TIMMERWERKEN</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-1 font-mono text-xs uppercase">
+      <a href="index.html" class="px-3 py-2 hover:bg-ink hover:text-bone transition-colors">Werk</a>
+      <a href="diensten.html" class="px-3 py-2 hover:bg-ink hover:text-bone transition-colors">Diensten</a>
+      <a href="over-ons.html" class="px-3 py-2 bg-ink text-bone">Over</a>
+      <a href="contact.html" class="px-3 py-2 hover:bg-ink hover:text-bone transition-colors">Contact</a>
     </nav>
-    <button id="menuBtn" aria-label="Menu" class="md:hidden p-2 cursor-pointer text-ink">
-      <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 8h16M4 16h16"/></svg>
+    <a href="tel:+31630553364" class="hidden md:inline-flex items-center gap-2 bg-mark border-2 border-ink px-4 py-2 font-mono text-sm font-bold text-ink hover:bg-flash transition-colors">
+      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+      06 30 55 33 64
+    </a>
+    <button id="menuBtn" aria-label="Menu" class="md:hidden p-2 cursor-pointer text-ink border-2 border-ink">
+      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
     </button>
   </div>
-  <div id="mobileNav" class="hidden md:hidden absolute inset-x-0 top-full bg-cream border-t border-line">
-    <div class="px-8 py-6 flex flex-col gap-4 text-base font-serif">
-      <a href="index.html" class="hover:text-clay">Werk</a>
-      <a href="diensten.html" class="hover:text-clay">Diensten</a>
-      <a href="over-ons.html" class="hover:text-clay">Over</a>
-      <a href="contact.html" class="hover:text-clay">Contact</a>
+  <div id="mobileNav" class="hidden md:hidden border-t-2 border-ink">
+    <div class="flex flex-col font-mono text-sm uppercase">
+      <a href="index.html" class="px-6 py-4 border-b border-ink/20 hover:bg-ink hover:text-bone">Werk</a>
+      <a href="diensten.html" class="px-6 py-4 border-b border-ink/20 hover:bg-ink hover:text-bone">Diensten</a>
+      <a href="over-ons.html" class="px-6 py-4 border-b border-ink/20 hover:bg-ink hover:text-bone">Over</a>
+      <a href="contact.html" class="px-6 py-4 border-b border-ink/20 hover:bg-ink hover:text-bone">Contact</a>
+      <a href="tel:+31630553364" class="px-6 py-4 bg-mark text-ink font-bold">→ Bel 06 30 55 33 64</a>
     </div>
   </div>
 </header>
 
 <main>
 
-  <section class="pt-40 lg:pt-56 pb-16 lg:pb-24 px-8 lg:px-16">
-    <div class="max-w-[110rem] mx-auto grid lg:grid-cols-12 gap-12 lg:gap-20">
-      <div class="lg:col-span-8">
-        <p class="font-serif italic text-clay text-base mb-10 flex items-center gap-3">
-          <span class="inline-block w-8 h-px bg-clay"></span>
-          Over ons
-        </p>
-        <h1 class="font-serif font-normal text-ink leading-[0.95] tracking-tight" style="font-size: clamp(3rem, 9vw, 10rem);">
-          Vakmanschap<br>
-          <em class="text-clay font-normal">begint bij</em><br>
-          wie het maakt.
-        </h1>
+  <section class="border-b-4 border-ink">
+    <div class="max-w-[110rem] mx-auto px-6 lg:px-10 py-16 lg:py-24">
+      <div class="font-mono text-xs uppercase mb-10 inline-flex items-center gap-3 bg-ink text-bone px-3 py-1.5">
+        <span class="w-2 h-2 bg-mark"></span>
+        Over · Marcel van Rhijn
       </div>
-      <div class="lg:col-span-4 lg:pt-12">
-        <p class="text-lg text-graphite leading-relaxed border-l-2 border-clay pl-6">
-          Van Rhijn Timmerwerken is een timmerbedrijf uit Katwijk aan Zee, gerund door Marcel. Eén timmerman die zijn vak verstaat — en zijn werk graag mooi achterlaat.
-        </p>
+      <h1 class="font-display uppercase text-ink leading-[0.85] tracking-[-0.02em]" style="font-size: clamp(3rem, 11vw, 12rem);">
+        Vakmanschap<br>
+        begint bij wie<br>
+        <span class="relative inline-block">
+          <span class="relative z-10">het maakt.</span>
+          <span class="absolute bottom-1 left-0 right-0 h-[0.4em] bg-mark -z-0"></span>
+        </span>
+      </h1>
+    </div>
+  </section>
+
+  <section class="border-b-4 border-ink">
+    <div class="max-w-[110rem] mx-auto px-6 lg:px-10 py-20 lg:py-28">
+      <div class="grid lg:grid-cols-12 gap-10 lg:gap-16">
+        <div class="lg:col-span-5">
+          <div class="border-2 border-ink bg-ink p-1">
+            <div class="aspect-[4/5] bg-graphite relative overflow-hidden flex items-end p-8 lg:p-10">
+              <div class="absolute inset-0 stripes-mark opacity-30" aria-hidden="true"></div>
+              <div class="relative">
+                <div class="font-display uppercase text-mark text-6xl lg:text-8xl leading-none mb-3">Hout.</div>
+                <div class="font-mono text-xs text-bone uppercase">/ ONZE TAAL</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 space-y-8">
+          <p class="font-display uppercase text-ink text-3xl lg:text-5xl leading-[1.05]">
+            Eén timmerman.<br>
+            Eén afspraak.<br>
+            <span class="bg-mark px-2 -mx-2">Eén offerte.</span>
+          </p>
+          <p class="text-lg text-graphite leading-relaxed">
+            Van Rhijn Timmerwerken is een timmerbedrijf uit Katwijk aan Zee, gerund door Marcel — een timmerman die zijn vak verstaat. Strak werk, eerlijke prijzen, en een afspraak die een afspraak is.
+          </p>
+          <p class="text-lg text-graphite leading-relaxed">
+            Geen onderaannemers, geen verkoper aan de telefoon. U heeft direct contact met de man die het werk ook uitvoert. Dat scheelt onduidelijkheid en levert beter werk op.
+          </p>
+
+          <dl class="grid sm:grid-cols-2 gap-0 border-2 border-ink mt-10">
+            <div class="border-2 border-ink -m-px p-6 bg-bone">
+              <dt class="font-mono text-xs uppercase text-mist mb-2">[ Vestiging ]</dt>
+              <dd class="font-display uppercase text-ink text-xl">Katwijk a/Zee</dd>
+            </div>
+            <div class="border-2 border-ink -m-px p-6 bg-bone">
+              <dt class="font-mono text-xs uppercase text-mist mb-2">[ Specialisme ]</dt>
+              <dd class="font-display uppercase text-ink text-xl">Hout op maat</dd>
+            </div>
+            <div class="border-2 border-ink -m-px p-6 bg-bone">
+              <dt class="font-mono text-xs uppercase text-mist mb-2">[ Werkgebied ]</dt>
+              <dd class="font-display uppercase text-ink text-xl">Katwijk e.o.</dd>
+            </div>
+            <div class="border-2 border-ink -m-px p-6 bg-mark">
+              <dt class="font-mono text-xs uppercase text-graphite mb-2">[ Aanspreekpunt ]</dt>
+              <dd class="font-display uppercase text-ink text-xl">Direct met Marcel</dd>
+            </div>
+          </dl>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="border-t border-line px-8 lg:px-16 py-24 lg:py-32">
-    <div class="max-w-5xl mx-auto">
-      <p class="font-serif text-ink leading-[1.15] tracking-tight" style="font-size: clamp(1.75rem, 3.5vw, 3rem);">
-        Of het nu gaat om een nieuwe dakkapel, een trap op maat of een kozijn dat aan vervanging toe is — bij Van Rhijn weet u wat u krijgt. <em class="text-clay">Strak werk</em>, eerlijke prijzen, en een afspraak die een afspraak is.
-      </p>
-      <p class="mt-12 text-lg text-graphite leading-relaxed max-w-3xl">
-        Geen onderaannemers, geen verkoper aan de telefoon. U heeft direct contact met de man die het werk ook uitvoert. Dat scheelt onduidelijkheid en levert beter werk op — dat is hoe wij het al jaren doen.
-      </p>
-    </div>
-  </section>
-
-  <section class="border-t border-line bg-paper px-8 lg:px-16 py-24 lg:py-32">
-    <div class="max-w-[110rem] mx-auto">
-      <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 mb-16">
-        <p class="lg:col-span-4 font-serif italic text-clay text-base flex items-center gap-3">
-          <span class="inline-block w-8 h-px bg-clay"></span>
-          Werkwijze
-        </p>
-        <h2 class="lg:col-span-8 font-serif font-normal text-ink leading-[1] tracking-tight" style="font-size: clamp(2.5rem, 6vw, 6rem);">
-          Hoe wij<br><em class="text-clay font-normal">werken.</em>
-        </h2>
+  <section class="bg-ink text-bone border-b-4 border-ink">
+    <div class="max-w-[110rem] mx-auto px-6 lg:px-10 py-20 lg:py-28">
+      <div class="grid lg:grid-cols-12 gap-8 mb-16">
+        <div class="lg:col-span-5">
+          <p class="font-mono text-xs uppercase text-mark mb-4">[ Werkwijze ]</p>
+          <h2 class="font-display uppercase text-bone leading-[0.9]" style="font-size: clamp(2.5rem, 7vw, 6rem);">
+            Hoe wij<br><span class="text-mark">werken.</span>
+          </h2>
+        </div>
       </div>
 
-      <ol class="grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-line border-y border-line">
-        <li class="bg-paper p-8 lg:p-10">
-          <div class="font-serif italic text-clay text-5xl tracking-tight leading-none mb-6">i.</div>
-          <h3 class="font-serif text-ink text-2xl mb-3">Kennismaking</h3>
-          <p class="text-graphite leading-relaxed">U mailt of belt uw plannen. We bellen kort terug en plannen — indien nodig — een afspraak ter plaatse.</p>
+      <ol class="grid md:grid-cols-2 lg:grid-cols-4 gap-0 border-2 border-mark">
+        <li class="p-8 lg:p-10 border-2 border-mark -m-px">
+          <div class="font-display text-mark text-7xl leading-none mb-6">01</div>
+          <h3 class="font-display uppercase text-bone text-xl mb-3">Kennismaking</h3>
+          <p class="text-mist leading-relaxed text-sm">U mailt of belt uw plannen. We bellen kort terug en plannen — indien nodig — een afspraak ter plaatse.</p>
         </li>
-        <li class="bg-paper p-8 lg:p-10">
-          <div class="font-serif italic text-clay text-5xl tracking-tight leading-none mb-6">ii.</div>
-          <h3 class="font-serif text-ink text-2xl mb-3">Heldere offerte</h3>
-          <p class="text-graphite leading-relaxed">U ontvangt een gespecificeerde offerte met vaste prijs en realistische planning.</p>
+        <li class="p-8 lg:p-10 border-2 border-mark -m-px">
+          <div class="font-display text-mark text-7xl leading-none mb-6">02</div>
+          <h3 class="font-display uppercase text-bone text-xl mb-3">Heldere offerte</h3>
+          <p class="text-mist leading-relaxed text-sm">U ontvangt een gespecificeerde offerte met vaste prijs en realistische planning.</p>
         </li>
-        <li class="bg-paper p-8 lg:p-10">
-          <div class="font-serif italic text-clay text-5xl tracking-tight leading-none mb-6">iii.</div>
-          <h3 class="font-serif text-ink text-2xl mb-3">Uitvoering</h3>
-          <p class="text-graphite leading-relaxed">Wij werken volgens planning, communiceren wat we doen en houden de werkplek schoon.</p>
+        <li class="p-8 lg:p-10 border-2 border-mark -m-px">
+          <div class="font-display text-mark text-7xl leading-none mb-6">03</div>
+          <h3 class="font-display uppercase text-bone text-xl mb-3">Uitvoering</h3>
+          <p class="text-mist leading-relaxed text-sm">Wij werken volgens planning, communiceren wat we doen en houden de werkplek schoon.</p>
         </li>
-        <li class="bg-paper p-8 lg:p-10">
-          <div class="font-serif italic text-clay text-5xl tracking-tight leading-none mb-6">iv.</div>
-          <h3 class="font-serif text-ink text-2xl mb-3">Oplevering</h3>
-          <p class="text-graphite leading-relaxed">Samen lopen we het werk na. Iets niet helemaal goed? Dan lossen we dat op.</p>
+        <li class="p-8 lg:p-10 border-2 border-mark -m-px">
+          <div class="font-display text-mark text-7xl leading-none mb-6">04</div>
+          <h3 class="font-display uppercase text-bone text-xl mb-3">Oplevering</h3>
+          <p class="text-mist leading-relaxed text-sm">Samen lopen we het werk na. Iets niet helemaal goed? Dan lossen we dat op.</p>
         </li>
       </ol>
     </div>
   </section>
 
-  <section class="border-t border-line px-8 lg:px-16 py-24 lg:py-32">
-    <div class="max-w-[110rem] mx-auto grid lg:grid-cols-12 gap-12">
-      <div class="lg:col-span-5">
-        <p class="font-serif italic text-clay text-base mb-8 flex items-center gap-3">
-          <span class="inline-block w-8 h-px bg-clay"></span>
-          Even praktisch
-        </p>
-        <h2 class="font-serif font-normal text-ink leading-[1] tracking-tight" style="font-size: clamp(2rem, 4.5vw, 4rem);">
-          Het bedrijf<br><em class="text-clay font-normal">in het kort</em>.
-        </h2>
-      </div>
-      <dl class="lg:col-span-7 grid sm:grid-cols-2 gap-y-10 gap-x-12 self-center">
-        <div class="border-t-2 border-clay pt-4">
-          <dt class="text-xs uppercase tracking-[0.2em] text-graphite mb-2">Vestiging</dt>
-          <dd class="font-serif text-ink text-2xl">Katwijk aan Zee</dd>
-        </div>
-        <div class="border-t-2 border-clay pt-4">
-          <dt class="text-xs uppercase tracking-[0.2em] text-graphite mb-2">Specialisme</dt>
-          <dd class="font-serif text-ink text-2xl"><em>Hout op maat</em></dd>
-        </div>
-        <div class="border-t-2 border-clay pt-4">
-          <dt class="text-xs uppercase tracking-[0.2em] text-graphite mb-2">Werkgebied</dt>
-          <dd class="font-serif text-ink text-2xl">Katwijk &amp; omstreken</dd>
-        </div>
-        <div class="border-t-2 border-clay pt-4">
-          <dt class="text-xs uppercase tracking-[0.2em] text-graphite mb-2">Aanspreekpunt</dt>
-          <dd class="font-serif text-ink text-2xl">Direct met Marcel</dd>
-        </div>
-      </dl>
-    </div>
-  </section>
-
-  <section class="border-t border-line bg-paper px-8 lg:px-16 py-32 lg:py-40">
-    <div class="max-w-4xl mx-auto text-center">
-      <p class="font-serif italic text-clay text-base mb-10 flex items-center gap-3 justify-center">
-        <span class="inline-block w-8 h-px bg-clay"></span>
-        Klaar om te starten?
-        <span class="inline-block w-8 h-px bg-clay"></span>
-      </p>
-      <h2 class="font-serif font-normal text-ink leading-[0.95] tracking-tight" style="font-size: clamp(2.5rem, 7vw, 6rem);">
-        Liever <em class="text-clay font-normal">even bellen</em>?<br>
-        Geen probleem.
+  <section class="bg-mark border-b-4 border-ink">
+    <div class="max-w-[110rem] mx-auto px-6 lg:px-10 py-24 lg:py-32">
+      <p class="font-mono text-xs uppercase text-ink mb-6">[ Liever even bellen? ]</p>
+      <h2 class="font-display uppercase text-ink leading-[0.85]" style="font-size: clamp(2.75rem, 9vw, 9rem);">
+        Geen verkoper.<br>Geen callcenter.<br>
+        <span class="bg-ink text-mark px-2 -mx-1 inline-block">Marcel zelf.</span>
       </h2>
-      <p class="mt-12 text-lg text-graphite leading-relaxed max-w-xl mx-auto">
-        Geen verkoper, geen callcenter — u krijgt Marcel zelf aan de lijn.
-      </p>
-      <div class="mt-12 flex flex-col sm:flex-row gap-6 justify-center items-center">
-        <a href="tel:+31630553364" class="group inline-flex items-baseline gap-3">
-          <span class="font-serif italic text-2xl text-ink border-b-2 border-clay pb-1">Bel 06 30 55 33 64</span>
-          <span class="text-clay text-xl group-hover:translate-x-1 transition-transform">→</span>
+      <div class="mt-12 flex flex-col sm:flex-row gap-4">
+        <a href="tel:+31630553364" class="group inline-flex items-center justify-center gap-3 bg-ink text-bone border-4 border-ink px-8 py-5 font-display uppercase text-base lg:text-lg hover:bg-bone hover:text-ink transition-colors">
+          Bel 06 30 55 33 64
+          <span class="group-hover:translate-x-1 transition-transform">→</span>
         </a>
-        <span class="text-mist hidden sm:inline">of</span>
-        <a href="contact.html" class="font-medium text-graphite hover:text-clay border-b border-line hover:border-clay transition-colors pb-1">
-          stuur een bericht
+        <a href="contact.html" class="group inline-flex items-center justify-center gap-3 bg-bone text-ink border-4 border-ink px-8 py-5 font-display uppercase text-base lg:text-lg hover:bg-ink hover:text-bone transition-colors">
+          Stuur een bericht
         </a>
       </div>
     </div>
@@ -200,39 +200,40 @@ tailwind.config = {
 
 </main>
 
-<footer class="border-t border-line bg-cream px-8 lg:px-16 py-16">
-  <div class="max-w-[110rem] mx-auto">
-    <div class="grid md:grid-cols-12 gap-8 lg:gap-12 items-end">
+<footer class="bg-ink text-bone">
+  <div class="max-w-[110rem] mx-auto px-6 lg:px-10 py-16">
+    <div class="grid md:grid-cols-12 gap-8">
       <div class="md:col-span-5">
-        <a href="index.html" class="font-serif italic text-3xl text-ink leading-none">Van Rhijn<span class="text-clay">.</span></a>
-        <p class="mt-6 max-w-sm text-graphite leading-relaxed">Timmerbedrijf in Katwijk aan Zee. Vakmanschap in kozijnen, deuren, dakkapellen, trappen en maatwerk.</p>
+        <div class="font-display uppercase text-bone text-3xl leading-none mb-1">Van Rhijn</div>
+        <div class="font-mono text-xs text-mark uppercase mb-6">/ Timmerwerken</div>
+        <p class="max-w-sm text-mist leading-relaxed">Timmerbedrijf in Katwijk aan Zee. Vakmanschap in kozijnen, deuren, dakkapellen, trappen en maatwerk.</p>
       </div>
       <div class="md:col-span-3">
-        <p class="text-xs uppercase tracking-[0.2em] text-clay mb-4">Contact</p>
-        <ul class="space-y-2 text-graphite">
-          <li><a href="tel:+31630553364" class="hover:text-ink transition-colors">06 30 55 33 64</a></li>
-          <li><a href="mailto:marcel@vrtimmerwerken.nl" class="hover:text-ink transition-colors">marcel@vrtimmerwerken.nl</a></li>
-          <li>Adrianastraat 50</li>
-          <li>2225 NZ Katwijk aan Zee</li>
+        <p class="font-mono text-xs uppercase text-mark mb-4">[ Contact ]</p>
+        <ul class="space-y-2 text-bone">
+          <li><a href="tel:+31630553364" class="font-display uppercase hover:text-mark transition-colors">06 30 55 33 64</a></li>
+          <li><a href="mailto:marcel@vrtimmerwerken.nl" class="hover:text-mark transition-colors break-all">marcel@vrtimmerwerken.nl</a></li>
+          <li class="text-mist pt-2">Adrianastraat 50</li>
+          <li class="text-mist">2225 NZ Katwijk aan Zee</li>
         </ul>
       </div>
       <div class="md:col-span-2">
-        <p class="text-xs uppercase tracking-[0.2em] text-clay mb-4">Pagina's</p>
-        <ul class="space-y-2 text-graphite">
-          <li><a href="index.html" class="hover:text-ink transition-colors">Werk</a></li>
-          <li><a href="diensten.html" class="hover:text-ink transition-colors">Diensten</a></li>
-          <li><a href="over-ons.html" class="hover:text-ink transition-colors">Over</a></li>
-          <li><a href="contact.html" class="hover:text-ink transition-colors">Contact</a></li>
+        <p class="font-mono text-xs uppercase text-mark mb-4">[ Pagina's ]</p>
+        <ul class="space-y-2 text-bone">
+          <li><a href="index.html" class="hover:text-mark transition-colors">Werk</a></li>
+          <li><a href="diensten.html" class="hover:text-mark transition-colors">Diensten</a></li>
+          <li><a href="over-ons.html" class="hover:text-mark transition-colors">Over</a></li>
+          <li><a href="contact.html" class="hover:text-mark transition-colors">Contact</a></li>
         </ul>
       </div>
-      <div class="md:col-span-2 md:text-right">
-        <p class="text-xs uppercase tracking-[0.2em] text-clay mb-4">Sinds</p>
-        <p class="font-serif italic text-2xl text-ink">Katwijk aan Zee</p>
+      <div class="md:col-span-2">
+        <p class="font-mono text-xs uppercase text-mark mb-4">[ Vestiging ]</p>
+        <p class="font-display uppercase text-bone text-xl leading-tight">Katwijk<br>aan Zee</p>
       </div>
     </div>
-    <div class="mt-12 pt-8 border-t border-line text-sm flex flex-col md:flex-row justify-between gap-4 text-mist">
-      <span>© 2026 Van Rhijn Timmerwerken</span>
-      <span class="font-serif italic">Alles met de hand gemaakt.</span>
+    <div class="mt-12 pt-8 border-t-2 border-mark/30 text-xs font-mono uppercase flex flex-col md:flex-row justify-between gap-4 text-mist">
+      <span>© 2026 Van Rhijn Timmerwerken — Alle rechten voorbehouden</span>
+      <span class="text-mark">/ STRAK WERK · EERLIJKE PRIJS · 1 OP 1</span>
     </div>
   </div>
 </footer>
