@@ -1,7 +1,9 @@
 html { scroll-behavior: smooth; }
 body { -webkit-font-smoothing: antialiased; }
 
-::selection { background: #FACC15; color: #0A0A0A; }
+::selection { background: #B91C1C; color: #E8E3D7; }
+
+.font-display { font-weight: 800; letter-spacing: -0.015em; }
 
 @keyframes marquee {
   from { transform: translateX(0); }
@@ -15,10 +17,10 @@ body { -webkit-font-smoothing: antialiased; }
 .stripes-mark {
   background-image: repeating-linear-gradient(
     45deg,
-    #FACC15 0,
-    #FACC15 14px,
-    #0A0A0A 14px,
-    #0A0A0A 28px
+    #E8E3D7 0,
+    #E8E3D7 12px,
+    transparent 12px,
+    transparent 24px
   );
 }
 
@@ -46,6 +48,6 @@ button:focus-visible,
 input:focus-visible,
 select:focus-visible,
 textarea:focus-visible {
-  outline: 3px solid #FACC15;
+  outline: 2px solid #B91C1C;
   outline-offset: 3px;
 }

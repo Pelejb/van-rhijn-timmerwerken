@@ -16,7 +16,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
@@ -25,7 +25,7 @@ tailwind.config = {
     extend: {
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
-        display: ['"Archivo Black"', 'Impact', 'sans-serif'],
+        display: ['Archivo', 'Impact', 'sans-serif'],
         mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
       },
       colors: {
@@ -36,8 +36,8 @@ tailwind.config = {
         steel: '#525252',
         mist: '#737373',
         line: '#C2B89F',
-        mark: '#FACC15',
-        flash: '#FDE047',
+        mark: '#B91C1C',
+        flash: '#991B1B',
         rust: '#991B1B',
       },
     }
@@ -70,7 +70,7 @@ tailwind.config = {
 
 <body class="bg-bone text-ink font-sans antialiased">
 
-<header class="border-b-4 border-ink bg-bone">
+<header class="border-b-2 border-ink bg-bone">
   <div class="max-w-[110rem] mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
     <a href="index.html" class="flex items-baseline gap-2">
       <span class="font-display text-ink text-2xl uppercase leading-none">Van Rhijn</span>
@@ -82,7 +82,7 @@ tailwind.config = {
       <a href="over-ons.html" class="px-3 py-2 hover:bg-ink hover:text-bone transition-colors">Over</a>
       <a href="contact.html" class="px-3 py-2 hover:bg-ink hover:text-bone transition-colors">Contact</a>
     </nav>
-    <a href="tel:+31630553364" class="hidden md:inline-flex items-center gap-2 bg-mark border-2 border-ink px-4 py-2 font-mono text-sm font-bold text-ink hover:bg-flash transition-colors">
+    <a href="tel:+31630553364" class="hidden md:inline-flex items-center gap-2 bg-mark border-2 border-ink px-4 py-2 font-mono text-sm font-bold text-bone hover:bg-flash transition-colors">
       <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
       06 30 55 33 64
     </a>
@@ -96,20 +96,20 @@ tailwind.config = {
       <a href="diensten.html" class="px-6 py-4 border-b border-ink/20 hover:bg-ink hover:text-bone">Diensten</a>
       <a href="over-ons.html" class="px-6 py-4 border-b border-ink/20 hover:bg-ink hover:text-bone">Over</a>
       <a href="contact.html" class="px-6 py-4 border-b border-ink/20 hover:bg-ink hover:text-bone">Contact</a>
-      <a href="tel:+31630553364" class="px-6 py-4 bg-mark text-ink font-bold">→ Bel 06 30 55 33 64</a>
+      <a href="tel:+31630553364" class="px-6 py-4 bg-mark text-bone font-bold">→ Bel 06 30 55 33 64</a>
     </div>
   </div>
 </header>
 
 <main>
 
-  <section class="border-b-4 border-ink relative overflow-hidden">
+  <section class="border-b-2 border-ink relative overflow-hidden">
     <div class="max-w-[110rem] mx-auto px-6 lg:px-10 py-16 lg:py-28 relative">
       <div class="font-mono text-xs lg:text-sm uppercase mb-10 inline-flex items-center gap-3 bg-ink text-bone px-3 py-1.5">
         <span class="w-2 h-2 bg-mark"></span>
         Timmerbedrijf · Katwijk aan Zee · est. NL
       </div>
-      <h1 class="font-display uppercase text-ink leading-[0.85] tracking-[-0.02em]" style="font-size: clamp(3.5rem, 12vw, 13rem);">
+      <h1 class="font-display uppercase text-ink leading-[0.85] tracking-[-0.02em]" style="font-size: clamp(2.75rem, 8.5vw, 8rem);">
         Timmerwerk<br>
         dat zit.<br>
         <span class="relative inline-block">
@@ -122,21 +122,20 @@ tailwind.config = {
           Een nieuw kozijn, een dakkapel, een trap of een inbouwkast op maat. Strak gemonteerd, eerlijk geprijsd, één aanspreekpunt — Marcel zelf — van offerte tot oplevering.
         </p>
         <div class="lg:col-span-6 flex flex-col sm:flex-row gap-4 lg:justify-end items-start lg:items-end">
-          <a href="contact.html" class="group inline-flex items-center justify-center gap-3 bg-ink text-bone border-2 border-ink px-8 py-5 font-display uppercase text-base lg:text-lg hover:bg-mark hover:text-ink transition-colors w-full sm:w-auto">
+          <a href="contact.html" class="group inline-flex items-center justify-center gap-3 bg-ink text-bone border-2 border-ink px-8 py-5 font-display uppercase text-base lg:text-lg hover:bg-mark hover:text-bone transition-colors w-full sm:w-auto">
             Vraag offerte
             <span class="group-hover:translate-x-1 transition-transform">→</span>
           </a>
-          <a href="tel:+31630553364" class="group inline-flex items-center justify-center gap-3 bg-mark text-ink border-2 border-ink px-8 py-5 font-display uppercase text-base lg:text-lg hover:bg-flash transition-colors w-full sm:w-auto">
+          <a href="tel:+31630553364" class="group inline-flex items-center justify-center gap-3 bg-mark text-bone border-2 border-ink px-8 py-5 font-display uppercase text-base lg:text-lg hover:bg-flash transition-colors w-full sm:w-auto">
             Bel 06 30 55 33 64
           </a>
         </div>
       </div>
     </div>
-    <div class="absolute bottom-0 right-0 w-32 lg:w-48 h-12 lg:h-16 stripes-mark border-l-4 border-t-4 border-ink hidden md:block" aria-hidden="true"></div>
   </section>
 
-  <section class="bg-ink overflow-hidden border-b-4 border-ink">
-    <div class="py-5 flex items-center gap-10 whitespace-nowrap font-display uppercase text-2xl lg:text-3xl text-bone animate-marquee">
+  <section class="bg-ink overflow-hidden border-b-2 border-ink">
+    <div class="py-5 flex items-center gap-10 whitespace-nowrap font-display uppercase text-xl lg:text-2xl text-bone animate-marquee">
       <span>KOZIJNEN</span><span class="text-mark">●</span>
       <span>DEUREN</span><span class="text-mark">●</span>
       <span>DAKKAPELLEN</span><span class="text-mark">●</span>
@@ -160,12 +159,12 @@ tailwind.config = {
     </div>
   </section>
 
-  <section class="border-b-4 border-ink">
+  <section class="border-b-2 border-ink">
     <div class="max-w-[110rem] mx-auto px-6 lg:px-10 py-20 lg:py-28">
       <div class="grid lg:grid-cols-12 gap-8 mb-16">
         <div class="lg:col-span-4">
           <p class="font-mono text-xs uppercase text-mist mb-4">[01] — Diensten</p>
-          <h2 class="font-display uppercase text-ink leading-[0.9]" style="font-size: clamp(2.5rem, 7vw, 6rem);">
+          <h2 class="font-display uppercase text-ink leading-[0.9]" style="font-size: clamp(2rem, 5.5vw, 4.5rem);">
             Wat we<br>maken.
           </h2>
         </div>
@@ -175,37 +174,37 @@ tailwind.config = {
       </div>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-0 border-2 border-ink">
-        <a href="diensten.html" class="group relative p-8 lg:p-10 bg-bone border-2 border-ink -m-px hover:bg-mark transition-colors">
+        <a href="diensten.html" class="group relative p-8 lg:p-10 bg-bone border border-ink -m-px hover:bg-mark transition-colors">
           <div class="font-mono text-xs uppercase text-mist mb-6">[01]</div>
           <h3 class="font-display uppercase text-ink text-3xl lg:text-4xl leading-none mb-4">Kozijnen<br>&amp; Ramen</h3>
           <p class="text-graphite leading-relaxed">Kozijnen op maat. Vervanging, restauratie of nieuwbouw — strak afgemonteerd, netjes afgekit.</p>
           <span class="absolute bottom-6 right-6 text-2xl group-hover:translate-x-1 transition-transform">→</span>
         </a>
-        <a href="diensten.html" class="group relative p-8 lg:p-10 bg-bone border-2 border-ink -m-px hover:bg-mark transition-colors">
+        <a href="diensten.html" class="group relative p-8 lg:p-10 bg-bone border border-ink -m-px hover:bg-mark transition-colors">
           <div class="font-mono text-xs uppercase text-mist mb-6">[02]</div>
           <h3 class="font-display uppercase text-ink text-3xl lg:text-4xl leading-none mb-4">Deuren</h3>
           <p class="text-graphite leading-relaxed">Binnen- en buitendeuren plaatsen, afhangen, sluitend afstellen. Inclusief sloten en beslag.</p>
           <span class="absolute bottom-6 right-6 text-2xl group-hover:translate-x-1 transition-transform">→</span>
         </a>
-        <a href="diensten.html" class="group relative p-8 lg:p-10 bg-bone border-2 border-ink -m-px hover:bg-mark transition-colors">
+        <a href="diensten.html" class="group relative p-8 lg:p-10 bg-bone border border-ink -m-px hover:bg-mark transition-colors">
           <div class="font-mono text-xs uppercase text-mist mb-6">[03]</div>
           <h3 class="font-display uppercase text-ink text-3xl lg:text-4xl leading-none mb-4">Dakkapellen</h3>
           <p class="text-graphite leading-relaxed">Plaatsing van een nieuwe dakkapel of vervanging. Meer ruimte en licht op zolder, in één dag mogelijk.</p>
           <span class="absolute bottom-6 right-6 text-2xl group-hover:translate-x-1 transition-transform">→</span>
         </a>
-        <a href="diensten.html" class="group relative p-8 lg:p-10 bg-bone border-2 border-ink -m-px hover:bg-mark transition-colors">
+        <a href="diensten.html" class="group relative p-8 lg:p-10 bg-bone border border-ink -m-px hover:bg-mark transition-colors">
           <div class="font-mono text-xs uppercase text-mist mb-6">[04]</div>
           <h3 class="font-display uppercase text-ink text-3xl lg:text-4xl leading-none mb-4">Trappen</h3>
           <p class="text-graphite leading-relaxed">Een nieuwe trap of een verzorgde traprenovatie. Open, dicht, recht of met bordes.</p>
           <span class="absolute bottom-6 right-6 text-2xl group-hover:translate-x-1 transition-transform">→</span>
         </a>
-        <a href="diensten.html" class="group relative p-8 lg:p-10 bg-bone border-2 border-ink -m-px hover:bg-mark transition-colors">
+        <a href="diensten.html" class="group relative p-8 lg:p-10 bg-bone border border-ink -m-px hover:bg-mark transition-colors">
           <div class="font-mono text-xs uppercase text-mist mb-6">[05]</div>
           <h3 class="font-display uppercase text-ink text-3xl lg:text-4xl leading-none mb-4">Maatwerk</h3>
           <p class="text-graphite leading-relaxed">Inbouwkasten, schappen, meubels en tv-wanden — precies passend bij uw ruimte.</p>
           <span class="absolute bottom-6 right-6 text-2xl group-hover:translate-x-1 transition-transform">→</span>
         </a>
-        <a href="diensten.html" class="group relative p-8 lg:p-10 bg-bone border-2 border-ink -m-px hover:bg-mark transition-colors">
+        <a href="diensten.html" class="group relative p-8 lg:p-10 bg-bone border border-ink -m-px hover:bg-mark transition-colors">
           <div class="font-mono text-xs uppercase text-mist mb-6">[06]</div>
           <h3 class="font-display uppercase text-ink text-3xl lg:text-4xl leading-none mb-4">Renovatie<br>&amp; Houtrot</h3>
           <p class="text-graphite leading-relaxed">Houtrot, scheuren of versleten delen vakkundig hersteld. Voor binnen- én buitenwerk.</p>
@@ -214,7 +213,7 @@ tailwind.config = {
       </div>
 
       <div class="mt-12">
-        <a href="diensten.html" class="inline-flex items-center gap-3 font-display uppercase text-lg border-b-4 border-ink pb-1 hover:text-rust transition-colors">
+        <a href="diensten.html" class="inline-flex items-center gap-3 font-display uppercase text-lg border-b-2 border-ink pb-1 hover:text-rust transition-colors">
           Bekijk alle 9 diensten
           <span>→</span>
         </a>
@@ -222,12 +221,12 @@ tailwind.config = {
     </div>
   </section>
 
-  <section class="bg-ink text-bone border-b-4 border-ink">
+  <section class="bg-ink text-bone border-b-2 border-ink">
     <div class="max-w-[110rem] mx-auto px-6 lg:px-10 py-20 lg:py-28">
       <div class="grid lg:grid-cols-12 gap-8 mb-16">
         <div class="lg:col-span-5">
           <p class="font-mono text-xs uppercase text-mark mb-4">[02] — Werkwijze</p>
-          <h2 class="font-display uppercase text-bone leading-[0.9]" style="font-size: clamp(2.5rem, 7vw, 6rem);">
+          <h2 class="font-display uppercase text-bone leading-[0.9]" style="font-size: clamp(2rem, 5.5vw, 4.5rem);">
             Eerlijk werk.<br>Geen<br><span class="text-mark">verrassingen.</span>
           </h2>
         </div>
@@ -237,22 +236,22 @@ tailwind.config = {
       </div>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-0 border-2 border-mark">
-        <div class="p-8 lg:p-10 border-2 border-mark -m-px relative">
+        <div class="p-8 lg:p-10 border border-mark -m-px relative">
           <div class="font-display text-mark text-7xl leading-none mb-6">01</div>
           <h3 class="font-display uppercase text-bone text-xl mb-3">Kennismaking</h3>
           <p class="text-mist leading-relaxed text-sm">U belt of mailt. Indien nodig komen we langs voor een vrijblijvende afspraak ter plaatse.</p>
         </div>
-        <div class="p-8 lg:p-10 border-2 border-mark -m-px">
+        <div class="p-8 lg:p-10 border border-mark -m-px">
           <div class="font-display text-mark text-7xl leading-none mb-6">02</div>
           <h3 class="font-display uppercase text-bone text-xl mb-3">Offerte</h3>
           <p class="text-mist leading-relaxed text-sm">Heldere offerte met vaste prijs en realistische planning. U weet vooraf precies waar u aan toe bent.</p>
         </div>
-        <div class="p-8 lg:p-10 border-2 border-mark -m-px">
+        <div class="p-8 lg:p-10 border border-mark -m-px">
           <div class="font-display text-mark text-7xl leading-none mb-6">03</div>
           <h3 class="font-display uppercase text-bone text-xl mb-3">Uitvoering</h3>
           <p class="text-mist leading-relaxed text-sm">We werken volgens planning, communiceren wat we doen en houden de werkplek opgeruimd.</p>
         </div>
-        <div class="p-8 lg:p-10 border-2 border-mark -m-px">
+        <div class="p-8 lg:p-10 border border-mark -m-px">
           <div class="font-display text-mark text-7xl leading-none mb-6">04</div>
           <h3 class="font-display uppercase text-bone text-xl mb-3">Oplevering</h3>
           <p class="text-mist leading-relaxed text-sm">Samen lopen we het werk na. Iets niet helemaal goed? Dan lossen we dat op.</p>
@@ -261,48 +260,48 @@ tailwind.config = {
     </div>
   </section>
 
-  <section class="border-b-4 border-ink">
+  <section class="border-b-2 border-ink">
     <div class="max-w-[110rem] mx-auto px-6 lg:px-10 py-20 lg:py-28">
       <div class="grid lg:grid-cols-12 gap-8 lg:gap-12">
         <div class="lg:col-span-5">
           <p class="font-mono text-xs uppercase text-mist mb-4">[03] — Werkgebied</p>
-          <h2 class="font-display uppercase text-ink leading-[0.9]" style="font-size: clamp(2.5rem, 6vw, 5.5rem);">
-            Katwijk<br>en de hele<br><span class="bg-mark px-2 -mx-2">regio.</span>
+          <h2 class="font-display uppercase text-ink leading-[0.9]" style="font-size: clamp(1.75rem, 4vw, 3rem);">
+            Katwijk<br>en de hele<br><span class="bg-mark text-bone px-2 -mx-2">regio.</span>
           </h2>
           <p class="mt-8 text-lg text-graphite leading-relaxed max-w-md">
             Werkzaam in Katwijk, Rijnsburg, Valkenburg, Noordwijk, Leiden en omstreken. Twijfelt u over uw plaats? Stuur even een bericht.
           </p>
         </div>
         <ul class="lg:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-0 border-2 border-ink self-center">
-          <li class="border-2 border-ink -m-px p-5 bg-bone font-display uppercase text-ink text-lg">Katwijk a/Zee</li>
-          <li class="border-2 border-ink -m-px p-5 bg-bone font-display uppercase text-ink text-lg">Katwijk a/d Rijn</li>
-          <li class="border-2 border-ink -m-px p-5 bg-mark font-display uppercase text-ink text-lg">Rijnsburg</li>
-          <li class="border-2 border-ink -m-px p-5 bg-bone font-display uppercase text-ink text-lg">Valkenburg</li>
-          <li class="border-2 border-ink -m-px p-5 bg-bone font-display uppercase text-ink text-lg">Noordwijk</li>
-          <li class="border-2 border-ink -m-px p-5 bg-bone font-display uppercase text-ink text-lg">Leiden</li>
-          <li class="border-2 border-ink -m-px p-5 bg-bone font-display uppercase text-ink text-lg">Oegstgeest</li>
-          <li class="border-2 border-ink -m-px p-5 bg-mark font-display uppercase text-ink text-lg">Wassenaar</li>
-          <li class="border-2 border-ink -m-px p-5 bg-bone font-display uppercase text-ink text-lg">Voorschoten</li>
+          <li class="border border-ink -m-px p-5 bg-bone font-display uppercase text-ink text-lg">Katwijk a/Zee</li>
+          <li class="border border-ink -m-px p-5 bg-bone font-display uppercase text-ink text-lg">Katwijk a/d Rijn</li>
+          <li class="border border-ink -m-px p-5 bg-mark font-display uppercase text-bone text-lg">Rijnsburg</li>
+          <li class="border border-ink -m-px p-5 bg-bone font-display uppercase text-ink text-lg">Valkenburg</li>
+          <li class="border border-ink -m-px p-5 bg-bone font-display uppercase text-ink text-lg">Noordwijk</li>
+          <li class="border border-ink -m-px p-5 bg-bone font-display uppercase text-ink text-lg">Leiden</li>
+          <li class="border border-ink -m-px p-5 bg-bone font-display uppercase text-ink text-lg">Oegstgeest</li>
+          <li class="border border-ink -m-px p-5 bg-mark font-display uppercase text-bone text-lg">Wassenaar</li>
+          <li class="border border-ink -m-px p-5 bg-bone font-display uppercase text-ink text-lg">Voorschoten</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <section class="bg-mark border-b-4 border-ink">
+  <section class="bg-mark border-b-2 border-ink">
     <div class="max-w-[110rem] mx-auto px-6 lg:px-10 py-24 lg:py-32 relative">
-      <p class="font-mono text-xs uppercase text-ink mb-6">[04] — Klaar voor de volgende stap?</p>
-      <h2 class="font-display uppercase text-ink leading-[0.85]" style="font-size: clamp(3rem, 11vw, 11rem);">
+      <p class="font-mono text-xs uppercase text-bone/70 mb-6">[04] — Klaar voor de volgende stap?</p>
+      <h2 class="font-display uppercase text-bone leading-[0.85]" style="font-size: clamp(2.25rem, 7.5vw, 7rem);">
         Stuur uw<br>plannen.<br>Wij <span class="bg-ink text-mark px-2 -mx-1 inline-block">bouwen</span>.
       </h2>
-      <p class="mt-10 text-lg lg:text-xl text-ink leading-relaxed max-w-2xl">
+      <p class="mt-10 text-lg lg:text-xl text-bone/90 leading-relaxed max-w-2xl">
         Een paar foto's of schetsen helpen al. U krijgt een eerlijke offerte op maat — meestal binnen één werkdag.
       </p>
       <div class="mt-12 flex flex-col sm:flex-row gap-4">
-        <a href="contact.html" class="group inline-flex items-center justify-center gap-3 bg-ink text-bone border-4 border-ink px-8 py-5 font-display uppercase text-base lg:text-lg hover:bg-bone hover:text-ink transition-colors">
+        <a href="contact.html" class="group inline-flex items-center justify-center gap-3 bg-ink text-bone border-2 border-ink px-8 py-5 font-display uppercase text-base lg:text-lg hover:bg-bone hover:text-ink transition-colors">
           Naar contactformulier
           <span class="group-hover:translate-x-1 transition-transform">→</span>
         </a>
-        <a href="tel:+31630553364" class="group inline-flex items-center justify-center gap-3 bg-bone text-ink border-4 border-ink px-8 py-5 font-display uppercase text-base lg:text-lg hover:bg-ink hover:text-bone transition-colors">
+        <a href="tel:+31630553364" class="group inline-flex items-center justify-center gap-3 bg-bone text-ink border-2 border-ink px-8 py-5 font-display uppercase text-base lg:text-lg hover:bg-ink hover:text-bone transition-colors">
           Bel 06 30 55 33 64
         </a>
       </div>
